@@ -1,0 +1,26 @@
+# Core
+pandas>=2.0.0
+lxml>=4.9.0
+rdflib>=7.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+PyYAML>=6.0.0
+python-slugify>=8.0.0
+networkx>=3.2.0
+matplotlib>=3.8.0
+
+# PDF page extraction before Transkribus upload
+pypdf>=4.0.0
+
+# NER
+transformers>=4.40.0
+torch>=2.1.0
+sentencepiece>=0.2.0
+accelerate>=0.28.0
+
+# Optional flexible/custom-label NER
+# Install if you want PUBLICATION / LITERARY_WORK extraction with GLiNER:
+# pip install gliner
+
+# Optional interactive HTML graph
+pyvis>=0.3.2

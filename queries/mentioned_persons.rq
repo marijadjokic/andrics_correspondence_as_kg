@@ -1,0 +1,13 @@
+PREFIX ex: <https://example.org/andric-letters/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?person ?label (COUNT(?letter) AS ?mentions)
+WHERE {
+  ?letter a ex:Letter ;
+          schema:mentions ?person .
+  ?person a schema:Person ;
+          rdfs:label ?label .
+}
+GROUP BY ?person ?label
+ORDER BY DESC(?mentions)

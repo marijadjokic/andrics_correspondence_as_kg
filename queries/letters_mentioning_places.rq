@@ -1,0 +1,14 @@
+PREFIX ex: <https://example.org/andric-letters/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?letter ?date ?writtenPlaceLabel ?mentionedPlaceLabel
+WHERE {
+  ?letter a ex:Letter ;
+          schema:mentions ?mentionedPlace .
+  ?mentionedPlace a schema:Place ;
+                  rdfs:label ?mentionedPlaceLabel .
+  OPTIONAL { ?letter schema:dateSent ?date . }
+  OPTIONAL { ?letter schema:locationCreated ?writtenPlace . ?writtenPlace rdfs:label ?writtenPlaceLabel . }
+}
+ORDER BY ?date ?letter

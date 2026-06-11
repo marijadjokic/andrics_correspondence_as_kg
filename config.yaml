@@ -1,0 +1,47 @@
+project:
+  base_uri: "https://example.org/andric-letters/"
+  collection_id: "andric-private-letters-1925-1941"
+  collection_label: "Ivo Andrić: Pisma (1912–1973) — selected letters"
+  source_label: "Karaulac, Miroslav, ed. Ivo Andrić: Pisma (1912–1973), private correspondence"
+  language: "sr-Latn"
+
+transkribus:
+  # Use manual export by default: put PAGE XML files into data/transkribus/pagexml
+  pagexml_dir: "data/transkribus/pagexml"
+
+ner:
+  hf_model: "classla/bcms-bertic-ner"
+  min_score: 0.60
+  use_gliner: false
+  gliner_model: "urchade/gliner_large-v2"
+  gliner_threshold: 0.35
+  gliner_labels:
+    - "person"
+    - "location"
+    - "organization"
+    - "publication"
+    - "literary work"
+    - "periodical"
+
+extraction:
+  default_sender: "Ivo Andrić"
+  # Use this only for a deliberately selected coherent subsection, e.g. letters to Zdenka Marković.
+  # The pipeline still tries to infer a recipient automatically from address blocks first.
+  default_recipient: "Zdenka Marković"
+  split_letters: true
+  remove_footnotes: true
+  keep_transcription_text_in_rdf: true
+
+linking:
+  wikidata_language: "sr"
+  fallback_language: "en"
+  enable_wikidata_lookup: true
+  manual_links_csv: "data/config/manual_entity_links.csv"
+
+output:
+  dir: "data/output"
+  letters_csv: "letters.csv"
+  entities_csv: "entities.csv"
+  mentions_csv: "mentions.csv"
+  ttl: "andric_letters_kg.ttl"
+  jsonld: "andric_letters_kg.jsonld"
