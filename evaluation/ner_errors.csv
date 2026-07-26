@@ -1,0 +1,46 @@
+error_type,letter_id,text,label,count
+FN,letter_0002,Beograd,LOC,1
+FN,letter_0006,Maribora,LOC,1
+FN,letter_0006,Bad Villach,LOC,1
+FN,letter_0006,Eisen Kappel,LOC,1
+FN,letter_0006,Karnten,LOC,1
+FN,letter_0007,Beograd,LOC,1
+FN,letter_0008,Mарсеј,LOC,1
+FN,letter_0008,"51, rue St. Jacques",LOC,1
+FN,letter_0009,Mapcej,LOC,1
+FN,letter_0009,"51, rue St. Jacques",LOC,1
+FN,letter_0009,Arles,LOC,1
+FN,letter_0009,Nimes,LOC,1
+FN,letter_0010,Maрсеј,LOC,1
+FN,letter_0010,"51, rue St. Jacques",LOC,1
+FN,letter_0010,Francusku,LOC,1
+FN,letter_0011,Ženeva,LOC,1
+FN,letter_0011,"5, rue des Alpes",LOC,1
+FN,letter_0011,Jurjevska ul. 19/I,LOC,1
+FN,letter_0011,Yougoslavie,LOC,1
+FN,letter_0012,Ženeva,LOC,1
+FN,letter_0012,"5, rue des Alpes",LOC,1
+FN,letter_0012,M. Krleže,PER,1
+FN,letter_0013,Geneve,LOC,1
+FN,letter_0013,"5, re des Alpes",LOC,1
+FN,letter_0014,"5, rue des Alpes",LOC,1
+FN,letter_0015,Берлин,LOC,1
+FP,letter_0006,Villach,LOC,1
+FP,letter_0006,Eisen Kappel Karnten,LOC,1
+FP,letter_0007,Bog,PER,1
+FP,letter_0008,St. Jacques,LOC,1
+FP,letter_0009,St. Jacques,LOC,1
+FP,letter_0009,Arles — Nimes,LOC,1
+FP,letter_0009,Ma,LOC,1
+FP,letter_0010,St. Jacques,LOC,1
+FP,letter_0010,Francuze,PER,1
+FP,letter_0010,Francusku,PER,1
+FP,letter_0011,Žene,LOC,1
+FP,letter_0011,Alpe,LOC,1
+FP,letter_0011,Jurjevska ul. 19,LOC,1
+FP,letter_0011,I Yougoslavie,LOC,1
+FP,letter_0012,Žene,LOC,1
+FP,letter_0012,Krleže,PER,1
+FP,letter_0013,Gene,LOC,1
+FP,letter_0014,Uskrsa,MISC,1
+FP,letter_0015,Uskrs,MISC,1

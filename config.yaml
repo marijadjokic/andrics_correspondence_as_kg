@@ -41,7 +41,8 @@ linking:
 output:
   dir: "data/output"
   letters_csv: "letters.csv"
-  entities_csv: "entities.csv"
-  mentions_csv: "mentions.csv"
+  letters_fixed_csv: "letters_fixed.csv"
+  entities_csv: "ner_nel_entities.csv"
+  ner_entities_csv: "ner_entities_cleaned.csv"
   ttl: "andric_letters_kg.ttl"
   jsonld: "andric_letters_kg.jsonld"
