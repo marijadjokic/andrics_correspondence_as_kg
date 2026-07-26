@@ -25,13 +25,13 @@ def main() -> None:
     cfg = load_config(args.config)
     out_dir = Path(cfg["output"]["dir"])
     letters_csv = out_dir / cfg["output"]["letters_csv"]
-    mentions_csv = out_dir / cfg["output"]["mentions_csv"]
+    ner_entities_csv = out_dir / cfg["output"]["ner_entities_csv"]
     entities_csv = out_dir / cfg["output"]["entities_csv"]
 
     letters = read_csv_records(letters_csv)
-    mentions = read_csv_records(mentions_csv)
-    enriched_letters = enrich_letters_with_metadata(letters, mentions, cfg)
-    entities = build_entities_table(mentions, cfg)
+    entities = read_csv_records(ner_entities_csv)
+    enriched_letters = enrich_letters_with_metadata(letters, entities, cfg)
+    entities = build_entities_table(entities, cfg)
 
     write_csv_records(letters_csv, enriched_letters)
     write_csv_records(entities_csv, entities)

@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List
 
 from rdflib import BNode, Graph, Literal, Namespace, URIRef
-from rdflib.namespace import DCTERMS, FOAF, OWL, RDF, RDFS, XSD
+from rdflib.namespace import DCTERMS, FOAF, OWL, RDF, RDFS, SKOS, XSD
 
 from .utils import canonical_label, make_slug
 
@@ -42,12 +42,14 @@ def build_rdf_graph(
 
     EX = Namespace(base_uri)
     g = Graph()
-    g.bind("ex", EX)
+    g.bind("andric", EX)
     g.bind("schema", SCHEMA)
     g.bind("dcterms", DCTERMS)
     g.bind("prov", PROV)
     g.bind("foaf", FOAF)
     g.bind("owl", OWL)
+    g.bind("skos", SKOS)
+    g.bind("xsd", XSD)
 
     collection_uri = EX[project_cfg.get("collection_id", "collection")]
     g.add((collection_uri, RDF.type, SCHEMA.Collection))
@@ -70,7 +72,8 @@ def build_rdf_graph(
         g.add((uri, RDFS.label, Literal(label, lang=lang)))
         g.add((uri, DCTERMS.type, Literal(typ)))
         if ent.get("wikidata_uri"):
-            g.add((uri, OWL.sameAs, URIRef(ent["wikidata_uri"])))
+            g.add((uri, SKOS.exactMatch, URIRef(ent["wikidata_uri"])))
+            g.add((uri, DCTERMS.source, URIRef(ent["wikidata_uri"])))
 
     def entity_uri(label: str, typ: str) -> URIRef:
         key = (canonical_label(label).lower(), typ.upper())

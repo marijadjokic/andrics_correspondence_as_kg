@@ -105,7 +105,6 @@ python .\scripts\01_pagexml_to_letters.py --config config.yaml
 python .\scripts\02_run_ner.py --config config.yaml
 python .\scripts\02b_clean_mentions.py
 python .\scripts\03_enrich_and_link.py --config config.yaml
-python .\scripts\03c_fix_entity_links.py
 python .\scripts\03b_fix_letter_metadata.py
 python .\scripts\04_build_rdf.py --config config.yaml
 ```
@@ -117,7 +116,6 @@ The steps perform the following operations:
 02_run_ner.py                 Runs NER and date extraction.
 02b_clean_mentions.py         Cleans and normalizes raw NER output.
 03_enrich_and_link.py         Creates entity tables and performs Wikidata lookup.
-03c_fix_entity_links.py       Applies manually controlled Wikidata links for high-confidence entities.
 03b_fix_letter_metadata.py    Normalizes sender, recipient, date and place metadata.
 04_build_rdf.py               Builds the RDF knowledge graph.
 ```
@@ -130,8 +128,10 @@ The main outputs are written to:
 
 ```text
 data/output/letters.csv
-data/output/mentions.csv
-data/output/entities.csv
+data/output/letters_fixed.csv
+data/output/ner_entities.csv
+data/output/ner_entities_cleaned.csv
+data/output/ner_nel_entities.csv
 data/output/andric_letters_kg.ttl
 data/output/andric_letters_kg.jsonld
 data/output/entity_network_edges.csv
@@ -142,9 +142,11 @@ data/output/entity_network.html
 The most important output files are:
 
 ```text
-letters.csv                  Structured records for individual letters.
-mentions.csv                 Normalized entity mentions extracted from letters.
-entities.csv                 Unique entities with type, mention count and Wikidata URI.
+letters.csv                  Raw structured records for individual letters.
+letters_fixed.csv            Letter records with corrected sender, recipient, date and place metadata.
+ner_entities.csv             Raw entity mentions extracted from letters by NER.
+ner_entities_cleaned.csv     Cleaned and normalized entity mentions.
+ner_nel_entities.csv         Unique entities with type, mention count and Wikidata URI.
 andric_letters_kg.ttl        RDF/Turtle representation of the knowledge graph.
 andric_letters_kg.jsonld     JSON-LD representation of the knowledge graph.
 entity_network_edges.csv     Edge list for network visualization.
@@ -152,23 +154,7 @@ entity_network.png           Static network visualization.
 entity_network.html          Interactive network visualization.
 ```
 
-## 5. Check RDF graph statistics
-
-To count the number of RDF triples, run:
-
-```bash
-python -c "from rdflib import Graph; g=Graph(); g.parse('data/output/andric_letters_kg.ttl', format='turtle'); print('Number of triples:', len(g))"
-```
-
-To print the main corpus and graph statistics, run:
-
-```bash
-python -c "import pandas as pd; from rdflib import Graph; letters=pd.read_csv('data/output/letters.csv', encoding='utf-8'); mentions=pd.read_csv('data/output/mentions.csv', encoding='utf-8'); entities=pd.read_csv('data/output/entities.csv', encoding='utf-8'); g=Graph(); g.parse('data/output/andric_letters_kg.ttl', format='turtle'); print('RDF triples:', len(g)); print('Letter resources:', len(letters)); print('Entity mention nodes:', len(mentions)); print('Unique entities:', len(entities)); print(); print('Entity types:'); print(entities['type'].value_counts())"
-```
-
-In the current version, the resulting RDF graph contains **1,579 triples** and **15 letter resources**.
-
-## 6. SPARQL examples
+## 5. SPARQL examples
 
 After building `andric_letters_kg.ttl`, example SPARQL queries can be executed with:
 
@@ -186,7 +172,7 @@ mentioned_persons.rq            Persons mentioned in the correspondence.
 letters_mentioning_places.rq    Letters and the places mentioned in them.
 ```
 
-## 7. Visualizations
+## 6. Visualizations
 
 To generate a static PNG network and an interactive HTML network, run:
 
@@ -207,6 +193,39 @@ data/output/entity_network_edges.csv
 data/output/entity_network.png
 data/output/entity_network.html
 ```
+
+## 7. Evaluation
+
+The quality of NER and NEL (entity linking) can be measured against manually annotated gold-standard datasets. Before running, activate the virtual environment.
+
+On Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+**NER evaluation** (entity recognition: PER, LOC, ORG, MISC) compares extracted entity text and type, regardless of span/position in the letter:
+
+```bash
+python .\evaluation\eval_ner.py --gold .\evaluation\gold_dataset_ner.csv --pred .\data\output\ner_entities.csv --out .\evaluation\ner_evaluation.csv --errors .\evaluation\ner_errors.csv
+```
+
+**NEL evaluation** (entity linking to Wikidata) checks whether an entity is linked to the correct `wikidata_uri`:
+
+```bash
+python .\evaluation\eval_nel.py --gold .\evaluation\gold_dataset_nel.csv --pred .\data\output\ner_nel_entities.csv --out .\evaluation\nel_evaluation.csv --errors .\evaluation\nel_errors.csv
+```
+
+Arguments:
+
+```text
+--gold      Gold (manually annotated) dataset.
+--pred      System output being evaluated.
+--out       (optional) Saves the results table (Precision/Recall/F1[/Accuracy]) per type as CSV.
+--errors    (optional) Saves the error analysis (false negatives / false positives per text) as CSV.
+```
+
+Run `eval_ner.py` first to check recognition quality, then `eval_nel.py` to check linking quality.
 
 ## 8. Methodological notes
 

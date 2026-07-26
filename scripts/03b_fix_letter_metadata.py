@@ -12,6 +12,7 @@ import pandas as pd
 
 
 LETTERS_CSV = PROJECT_ROOT / "data/output/letters.csv"
+LETTERS_CSV_FIX = PROJECT_ROOT / "data/output/letters_fixed.csv"
 
 
 PLACE_ALIASES = {
@@ -88,9 +89,9 @@ def main():
         axis=1,
     )
 
-    df.to_csv(LETTERS_CSV, index=False, encoding="utf-8")
+    df.to_csv(LETTERS_CSV_FIX, index=False, encoding="utf-8")
 
-    print("Saved fixed metadata to:", LETTERS_CSV)
+    print("Saved fixed metadata to:", LETTERS_CSV_FIX)
     print(df[["letter_id", "sender", "recipient", "date_iso", "place_written"]].to_string())
 
 

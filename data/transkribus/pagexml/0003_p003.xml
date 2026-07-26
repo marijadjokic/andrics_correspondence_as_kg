@@ -3,12 +3,12 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.44.0:model_id=442685:lm=none:date=08_06_2026_17:39</Creator>
         <Created>2026-06-08T16:05:31.858+02:00</Created>
-        <LastChange>2026-06-10T09:14:45.983+02:00</LastChange>
-        <TranskribusMetadata docId="16706883" pageId="121814701" pageNr="3" tsid="291425095" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=HKXCJKLNEUMNRWDTLSMZRELK" xmlUrl="https://files.transkribus.eu/Get?id=UHYPATAMLYCNTRQQZHINDZIR" imageId="103449422"/>
+        <LastChange>2026-07-25T14:57:04.030+02:00</LastChange>
+        <TranskribusMetadata docId="16706883" pageId="121814701" pageNr="3" tsid="297762702" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=HKXCJKLNEUMNRWDTLSMZRELK" xmlUrl="https://files.transkribus.eu/Get?id=ONWRABXBIEOZBHNNYYYKLWTG" imageId="103449422"/>
     </Metadata>
     <Page imageFilename="0003_p003.jpg" imageWidth="3508" imageHeight="2479">
         <ReadingOrder>
-            <OrderedGroup id="ro_1781075910628" caption="Regions reading order">
+            <OrderedGroup id="ro_1784984956269" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_1"/>
                 <RegionRefIndexed index="2" regionRef="r_2"/>
@@ -243,7 +243,7 @@
                 <Coords points="1956,468 2771,471 2771,521 1956,518"/>
                 <Baseline points="1956,513 2001,516 2045,516 2090,516 2135,513 2180,516 2225,516 2269,516 2314,516 2359,516 2404,516 2449,516 2493,516 2538,516 2583,516 2628,516 2673,516 2717,516 2762,516 2771,516"/>
                 <TextEquiv>
-                    <Unicode>Molim Vas pišite mi na kučnu adresu.</Unicode>
+                    <Unicode>Molim Vas pišite mi na kućnu adresu.</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextEquiv>

@@ -1,0 +1,61 @@
+entity_id,label,type,wikidata_uri,mention_count
+,11. II. 25,DATE,,1
+,13. VII. 26,DATE,,1
+,1925,DATE,,4
+,1926,DATE,,3
+,1927,DATE,,4
+,1930,DATE,,5
+,1932,DATE,,1
+,1939,DATE,,2
+,2 februara 1927,DATE,,1
+,2. IV. 25,DATE,,1
+,20 aprila 1927,DATE,,1
+,20. X. 26,DATE,,1
+,24. II. 26,DATE,,1
+,28. XI. 25,DATE,,1
+,6 aprila 1932,DATE,,1
+,Alpi,LOC,http://www.wikidata.org/entity/Q37572926,1
+,Arles,LOC,http://www.wikidata.org/entity/Q48292,1
+,Atina,LOC,http://www.wikidata.org/entity/Q116531,2
+,Austrija,LOC,http://www.wikidata.org/entity/Q40,1
+,Avignon,LOC,http://www.wikidata.org/entity/Q6397,2
+,Beograd,LOC,http://www.wikidata.org/entity/Q3711,8
+,Berlin,LOC,http://www.wikidata.org/entity/Q64,1
+,Carigrad,LOC,http://www.wikidata.org/entity/Q17718098,1
+,Dežmanova ul. 3 / 1,LOC,,1
+,Dubrovnik,LOC,http://www.wikidata.org/entity/Q1722,1
+,Eisenkappel,LOC,http://www.wikidata.org/entity/Q134291767,1
+,Frankfurt,LOC,http://www.wikidata.org/entity/Q1794,1
+,Fribourg,LOC,http://www.wikidata.org/entity/Q36378,1
+,Grenoble,LOC,http://www.wikidata.org/entity/Q1289,1
+,Jurjevska ul. 19,LOC,,1
+,Krakow,LOC,http://www.wikidata.org/entity/Q31487,1
+,Marseille,LOC,http://www.wikidata.org/entity/Q23482,5
+,Nîmes,LOC,http://www.wikidata.org/entity/Q42807,1
+,Poljska,LOC,http://www.wikidata.org/entity/Q36,1
+,Provansa,LOC,http://www.wikidata.org/entity/Q101081,1
+,Sarajevo,LOC,http://www.wikidata.org/entity/Q11194,1
+,St. Jacques,LOC,http://www.wikidata.org/entity/Q21475356,3
+,Villach,LOC,http://www.wikidata.org/entity/Q483522,1
+,Višegrad,LOC,http://www.wikidata.org/entity/Q239266,3
+,Weimar,LOC,http://www.wikidata.org/entity/Q37489663,1
+,Zagreb,LOC,http://www.wikidata.org/entity/Q1435,8
+,Ženeva,LOC,http://www.wikidata.org/entity/Q23861440,8
+,Pripovetke,MISC,,1
+,Agramer Tagblatt,ORG,http://www.wikidata.org/entity/Q120030987,1
+,Akademija,ORG,http://www.wikidata.org/entity/Q162633,1
+,Hrvatska revija,ORG,http://www.wikidata.org/entity/Q5923993,1
+,Srp. Knjiž. Zadruzi,ORG,,1
+,Vijenac,ORG,http://www.wikidata.org/entity/Q1201922,1
+,Bronisław Grabowski,PER,http://www.wikidata.org/entity/Q9179905,1
+,Dobronić,PER,http://www.wikidata.org/entity/Q1233522,1
+,Endre Ady,PER,http://www.wikidata.org/entity/Q211392,1
+,Franz Schütz,PER,http://www.wikidata.org/entity/Q1449030,1
+,Ivo Andrić,PER,http://www.wikidata.org/entity/Q47561,15
+,Ivo Vojnović,PER,http://www.wikidata.org/entity/Q553440,1
+,Miroslav Krleža,PER,http://www.wikidata.org/entity/Q325428,1
+,Nevistić,PER,http://www.wikidata.org/entity/Q131353567,1
+,Sczepanska,PER,,1
+,Tadeusz Boy-Żeleński,PER,http://www.wikidata.org/entity/Q699597,1
+,Tugomir Alaupović,PER,http://www.wikidata.org/entity/Q110227319,1
+,Zdenka Marković,PER,http://www.wikidata.org/entity/Q9389418,4

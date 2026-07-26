@@ -1,0 +1,122 @@
+letter_id,text,label,start,end,score,model
+letter_0001,Sarajevo,LOC,0,8,0.980204939842224,classla/bcms-bertic-ner
+letter_0001,11. II 1925,DATE,10,21,1.0,rule-based-date-v1
+letter_0001,Ivo Andrić,PER,95,105,0.996019959449768,classla/bcms-bertic-ner
+letter_0001,11. II. 25,DATE,106,116,1.0,rule-based-date-v1
+letter_0002,Beograd,LOC,0,7,0.9392011761665344,classla/bcms-bertic-ner
+letter_0002,1. IV 1925,DATE,9,19,1.0,rule-based-date-v1
+letter_0002,2. IV. 25,DATE,29,38,1.0,rule-based-date-v1
+letter_0002,Beograd,LOC,134,142,0.9983125925064088,classla/bcms-bertic-ner
+letter_0002,Dobronić,PER,477,486,0.9352021217346193,classla/bcms-bertic-ner
+letter_0002,Sczepanska,PER,568,578,0.9743217825889589,classla/bcms-bertic-ner
+letter_0002,Poljska,LOC,642,649,0.978314995765686,classla/bcms-bertic-ner
+letter_0002,Pripovetke,MISC,749,759,0.9835421442985536,classla/bcms-bertic-ner
+letter_0002,Srpska književna zadruga,ORG,773,792,0.9961962699890136,classla/bcms-bertic-ner
+letter_0002,Akademija,ORG,834,843,0.9922829270362854,classla/bcms-bertic-ner
+letter_0002,Ivo Andrić,PER,923,933,0.9980722069740297,classla/bcms-bertic-ner
+letter_0003,Beograd,LOC,0,7,0.9836169481277466,classla/bcms-bertic-ner
+letter_0003,10. V 1925,DATE,9,19,1.0,rule-based-date-v1
+letter_0003,Beograd,LOC,129,137,0.9984878301620485,classla/bcms-bertic-ner
+letter_0003,Ivo Andrić,PER,493,502,0.990688979625702,classla/bcms-bertic-ner
+letter_0004,Atina,LOC,0,5,0.9145520925521852,classla/bcms-bertic-ner
+letter_0004,28. XI 1925,DATE,7,18,1.0,rule-based-date-v1
+letter_0004,Carigrad,LOC,35,44,0.7942209839820862,classla/bcms-bertic-ner
+letter_0004,Atina,LOC,59,64,0.9779617786407472,classla/bcms-bertic-ner
+letter_0004,Ivo Andrić,PER,100,110,0.9980175495147704,classla/bcms-bertic-ner
+letter_0004,28. XI. 25,DATE,111,121,1.0,rule-based-date-v1
+letter_0005,Beograd,LOC,0,7,0.961447536945343,classla/bcms-bertic-ner
+letter_0005,24. II 1926,DATE,9,20,1.0,rule-based-date-v1
+letter_0005,Beograd,LOC,22,29,0.7523264288902283,classla/bcms-bertic-ner
+letter_0005,24. II. 26,DATE,30,40,1.0,rule-based-date-v1
+letter_0005,Agramer Tagblatt,ORG,120,129,0.7576124668121338,classla/bcms-bertic-ner
+letter_0005,Ivo Vojnović,PER,335,347,0.998290717601776,classla/bcms-bertic-ner
+letter_0005,Dubrovnik,LOC,365,374,0.997308611869812,classla/bcms-bertic-ner
+letter_0005,Ivo Andrić,PER,547,557,0.9977741837501526,classla/bcms-bertic-ner
+letter_0006,Višegrad,LOC,0,8,0.9816421866416932,classla/bcms-bertic-ner
+letter_0006,13. VII 1926,DATE,10,22,1.0,rule-based-date-v1
+letter_0006,Ivo Andrić,PER,170,180,0.9970956444740297,classla/bcms-bertic-ner
+letter_0006,Višegrad,LOC,181,189,0.8211488723754883,classla/bcms-bertic-ner
+letter_0006,13. VII. 26,DATE,190,201,1.0,rule-based-date-v1
+letter_0006,Zdenka Marković,PER,217,232,0.9137225151062012,classla/bcms-bertic-ner
+letter_0006,Villach,LOC,252,259,0.974939465522766,classla/bcms-bertic-ner
+letter_0006,Eisenkappel,LOC,264,284,0.9033662676811218,classla/bcms-bertic-ner
+letter_0006,Austrija,LOC,285,293,0.9073998928070068,classla/bcms-bertic-ner
+letter_0007,Beograd,LOC,0,7,0.9765726327896118,classla/bcms-bertic-ner
+letter_0007,20. X 1926,DATE,9,19,1.0,rule-based-date-v1
+letter_0007,20. X. 26,DATE,29,38,1.0,rule-based-date-v1
+letter_0007,Ivo Andrić,PER,493,503,0.9980347156524658,classla/bcms-bertic-ner
+letter_0008,2. II 1927,DATE,8,18,1.0,rule-based-date-v1
+letter_0008,Marseille,LOC,20,29,0.9818459153175354,classla/bcms-bertic-ner
+letter_0008,2 februara 1927,DATE,30,45,1.0,rule-based-date-v1
+letter_0008,St. Jacques,LOC,54,65,0.9767774939537048,classla/bcms-bertic-ner
+letter_0008,Višegrad,LOC,259,268,0.7623341083526611,classla/bcms-bertic-ner
+letter_0008,Ivo Andrić,PER,634,644,0.9978381395339966,classla/bcms-bertic-ner
+letter_0009,20. IV 1927,DATE,8,19,1.0,rule-based-date-v1
+letter_0009,Marseille,LOC,21,30,0.981473982334137,classla/bcms-bertic-ner
+letter_0009,20 aprila 1927,DATE,31,45,1.0,rule-based-date-v1
+letter_0009,St. Jacques,LOC,55,66,0.93543940782547,classla/bcms-bertic-ner
+letter_0009,Provansa,LOC,446,454,0.9851778149604796,classla/bcms-bertic-ner
+letter_0009,Arles,LOC,456,461,0.8662809133529663,classla/bcms-bertic-ner
+letter_0009,Nîmes,LOC,464,469,0.8662809133529663,classla/bcms-bertic-ner
+letter_0009,Avignon,LOC,472,479,0.8848772048950195,classla/bcms-bertic-ner
+letter_0009,Marseille,LOC,540,549,0.9883923530578612,classla/bcms-bertic-ner
+letter_0009,Avignon,LOC,585,593,0.7758909463882446,classla/bcms-bertic-ner
+letter_0009,Tadeusz Boy-Żeleński,PER,717,729,0.9370150566101074,classla/bcms-bertic-ner
+letter_0009,Zagreb,LOC,896,903,0.9984398484230042,classla/bcms-bertic-ner
+letter_0009,Vijenac,ORG,933,940,0.896378755569458,classla/bcms-bertic-ner
+letter_0009,Nevistić,PER,952,962,0.9643428921699524,classla/bcms-bertic-ner
+letter_0009,Ivo Andrić,PER,1236,1246,0.9967817664146424,classla/bcms-bertic-ner
+letter_0009,30. IX 1927,DATE,1255,1266,1.0,rule-based-date-v1
+letter_0010,Marseille,LOC,0,9,0.9890982508659364,classla/bcms-bertic-ner
+letter_0010,30. IX 1927,DATE,10,21,1.0,rule-based-date-v1
+letter_0010,St. Jacques,LOC,31,42,0.9770259261131288,classla/bcms-bertic-ner
+letter_0010,Zagreb,LOC,258,264,0.9982398748397828,classla/bcms-bertic-ner
+letter_0010,Grenoble,LOC,367,374,0.99578458070755,classla/bcms-bertic-ner
+letter_0010,Ivo Andrić,PER,656,666,0.9984824061393738,classla/bcms-bertic-ner
+letter_0011,Ženeva,LOC,0,6,0.8517725467681885,classla/bcms-bertic-ner
+letter_0011,14. X 1930,DATE,8,18,1.0,rule-based-date-v1
+letter_0011,Ženeva,LOC,20,24,0.9946632385253906,classla/bcms-bertic-ner
+letter_0011,14 oktobra 1930,DATE,28,43,1.0,rule-based-date-v1
+letter_0011,Alpi,LOC,58,62,0.639125645160675,classla/bcms-bertic-ner
+letter_0011,Zagreb,LOC,794,800,0.9981691837310792,classla/bcms-bertic-ner
+letter_0011,Beograd,LOC,841,848,0.9981985688209534,classla/bcms-bertic-ner
+letter_0011,Fribourg,LOC,900,909,0.9259634017944336,classla/bcms-bertic-ner
+letter_0011,Ženeva,LOC,929,935,0.990460991859436,classla/bcms-bertic-ner
+letter_0011,Tugomir Alaupović,PER,1026,1045,0.9717653393745422,classla/bcms-bertic-ner
+letter_0011,Ivo Andrić,PER,1186,1196,0.9977573156356812,classla/bcms-bertic-ner
+letter_0011,Zdenka Marković,PER,1217,1232,0.908865451812744,classla/bcms-bertic-ner
+letter_0011,Zagreb,LOC,1233,1239,0.9155194163322448,classla/bcms-bertic-ner
+letter_0011,Jurjevska ul. 19,LOC,1241,1257,0.9874559044837952,classla/bcms-bertic-ner
+letter_0012,Ženeva,LOC,0,6,0.7246899008750916,classla/bcms-bertic-ner
+letter_0012,18. X 1930,DATE,8,18,1.0,rule-based-date-v1
+letter_0012,Ženeva,LOC,20,24,0.9879072308540344,classla/bcms-bertic-ner
+letter_0012,18 oktobra 1930,DATE,28,43,1.0,rule-based-date-v1
+letter_0012,Hrvatska revija,ORG,256,271,0.9969117641448976,classla/bcms-bertic-ner
+letter_0012,Miroslav Krleža,PER,297,305,0.9557569622993468,classla/bcms-bertic-ner
+letter_0012,Endre Ady,PER,326,337,0.8902810215950012,classla/bcms-bertic-ner
+letter_0012,Ivo Andrić,PER,606,615,0.9743768572807312,classla/bcms-bertic-ner
+letter_0013,Ženeva,LOC,0,6,0.6788732409477234,classla/bcms-bertic-ner
+letter_0013,18. XI 1930,DATE,8,19,1.0,rule-based-date-v1
+letter_0013,Gene,LOC,21,25,0.662192165851593,classla/bcms-bertic-ner
+letter_0013,Zagreb,LOC,89,96,0.9983940720558168,classla/bcms-bertic-ner
+letter_0013,Ivo Andrić,PER,249,258,0.9866934418678284,classla/bcms-bertic-ner
+letter_0014,Ženeva,LOC,0,6,0.7872201800346375,classla/bcms-bertic-ner
+letter_0014,6. IV 1932,DATE,8,18,1.0,rule-based-date-v1
+letter_0014,Ženeva,LOC,20,26,0.644292950630188,classla/bcms-bertic-ner
+letter_0014,6 aprila 1932,DATE,28,41,1.0,rule-based-date-v1
+letter_0014,Zagreb,LOC,116,123,0.9983903169631958,classla/bcms-bertic-ner
+letter_0014,Zagreb,LOC,389,396,0.9981204867362976,classla/bcms-bertic-ner
+letter_0014,Franz Schütz,PER,464,476,0.990559697151184,classla/bcms-bertic-ner
+letter_0014,Frankfurt,LOC,730,740,0.927207887172699,classla/bcms-bertic-ner
+letter_0014,Weimar,LOC,743,750,0.956461489200592,classla/bcms-bertic-ner
+letter_0014,Ivo Andrić,PER,898,907,0.98432856798172,classla/bcms-bertic-ner
+letter_0015,11. IV 1939,DATE,8,19,1.0,rule-based-date-v1
+letter_0015,Berlin,LOC,21,27,0.9927127957344056,classla/bcms-bertic-ner
+letter_0015,11. aprila 1939,DATE,28,43,1.0,rule-based-date-v1
+letter_0015,Zdenka Marković,PER,63,69,0.7549836039543152,classla/bcms-bertic-ner
+letter_0015,Bronisław Grabowski,PER,121,138,0.9662115573883056,classla/bcms-bertic-ner
+letter_0015,Krakow,LOC,259,265,0.980285108089447,classla/bcms-bertic-ner
+letter_0015,Ivo Andrić,PER,344,353,0.9500187039375304,classla/bcms-bertic-ner
+letter_0015,Zdenka Marković,PER,375,390,0.8638688325881958,classla/bcms-bertic-ner
+letter_0015,Zagreb,LOC,391,397,0.663072943687439,classla/bcms-bertic-ner
+letter_0015,Dežmanova ul. 3/1,LOC,399,416,0.9289658665657043,classla/bcms-bertic-ner

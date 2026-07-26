@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 import os
-import re
 from dataclasses import dataclass, asdict
 from typing import Any, Dict, Iterable, List, Optional
 
+from .dates import find_date_spans
 from .utils import canonical_label, dedupe_dicts
 
 
@@ -39,6 +39,68 @@ GLINER_LABEL_MAP = {
 }
 
 
+def _hf_raw_label(result: Dict[str, Any]) -> str:
+    """Return a comparable label from a Transformers pipeline result."""
+    return str(result.get("entity_group") or result.get("entity") or "MISC").upper()
+
+
+def _merge_hf_wordpieces(results: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Merge adjacent WordPiece continuations emitted as separate NER results.
+
+    A WordPiece token prefixed with ``##`` continues the preceding token without
+    a space. Some token-classification models assign a new B-* tag to each piece,
+    so Transformers' ``aggregation_strategy="simple"`` can leave those pieces as
+    separate entities. Offsets are supplied by the pipeline; callers do not need
+    to calculate them.
+    """
+    merged: List[Dict[str, Any]] = []
+
+    for result in results:
+        current = dict(result)
+        raw_word = str(current.get("word") or "")
+
+        if merged:
+            previous = merged[-1]
+            previous_end = previous.get("end")
+            current_start = current.get("start")
+            same_label = _hf_raw_label(previous) == _hf_raw_label(current)
+            is_continuation = raw_word.lstrip().startswith("##")
+            contiguous = (
+                isinstance(previous_end, int)
+                and isinstance(current_start, int)
+                and previous_end == current_start
+            )
+
+            if same_label and is_continuation and contiguous:
+                previous["word"] = str(previous.get("word") or "") + raw_word.lstrip()
+                previous["end"] = current.get("end", previous_end)
+                previous["score"] = min(
+                    float(previous.get("score", 0.0)),
+                    float(current.get("score", 0.0)),
+                )
+                continue
+
+        merged.append(current)
+
+    return merged
+
+
+def _hf_entity_text(text: str, result: Dict[str, Any]) -> str:
+    """Recover an entity's surface form, preferring the original source text."""
+    start = result.get("start")
+    end = result.get("end")
+    if (
+        isinstance(start, int)
+        and isinstance(end, int)
+        and 0 <= start < end <= len(text)
+    ):
+        return canonical_label(text[start:end])
+
+    # Defensive fallback for tokenizers/pipelines that do not provide offsets.
+    word = str(result.get("word") or "")
+    return canonical_label(word.replace(" ##", "").replace("##", ""))
+
+
 class HuggingFaceNER:
     def __init__(self, model_name: str, min_score: float = 0.60):
         from transformers import pipeline
@@ -52,15 +114,15 @@ class HuggingFaceNER:
         )
 
     def extract(self, text: str, letter_id: str) -> List[EntityMention]:
-        results = self.pipe(text)
+        results = _merge_hf_wordpieces(self.pipe(text))
         mentions: List[EntityMention] = []
         for r in results:
             score = float(r.get("score", 0.0))
             if score < self.min_score:
                 continue
-            raw_label = str(r.get("entity_group") or r.get("entity") or "MISC")
+            raw_label = _hf_raw_label(r)
             label = HF_LABEL_MAP.get(raw_label.upper(), raw_label.upper())
-            ent_text = canonical_label(str(r.get("word") or ""))
+            ent_text = _hf_entity_text(text, r)
             if not ent_text or len(ent_text) < 2:
                 continue
             mentions.append(
@@ -110,26 +172,22 @@ class GlinerNER:
 
 
 def extract_date_mentions(text: str, letter_id: str) -> List[EntityMention]:
-    """Simple backup date extractor, because many NER models miss historical/abbreviated dates."""
-    patterns = [
-        r"\b\d{1,2}\s*\.\s*(?:[IVXLCDM]+|\d{1,2})\s*\.\s*\d{2,4}\b",
-        r"\b\d{1,2}\s+(?:januar|februar|mart|april|maj|jun|jul|avgust|septembar|oktobar|novembar|decembar)[a-z]*\s+\d{2,4}\b",
-        r"\b\d{4}\b",
-    ]
+    """Extract dates with deterministic rules as a complement to ML NER."""
     mentions: List[EntityMention] = []
-    for pat in patterns:
-        for m in re.finditer(pat, text, flags=re.I):
-            mentions.append(
-                EntityMention(
-                    letter_id=letter_id,
-                    text=canonical_label(m.group(0)),
-                    label="DATE",
-                    start=m.start(),
-                    end=m.end(),
-                    score=1.0,
-                    model="regex-date",
-                )
+    for start, end in find_date_spans(text):
+        mentions.append(
+            EntityMention(
+                letter_id=letter_id,
+                text=canonical_label(text[start:end]),
+                label="DATE",
+                start=start,
+                end=end,
+                score=1.0,
+                # The CSV schema calls this field "model", but this value is
+                # provenance for a deterministic extractor, not an ML model.
+                model="rule-based-date-v1",
             )
+        )
     return mentions
 
 

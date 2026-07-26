@@ -1,0 +1,108 @@
+source,target,source_type,target_type,weight
+letter_0001,11. II 1925,LETTER,DATE,1
+letter_0001,11. II. 25,LETTER,DATE,1
+letter_0001,Ivo Andrić,LETTER,PER,1
+letter_0001,Sarajevo,LETTER,LOC,1
+letter_0002,1. IV 1925,LETTER,DATE,1
+letter_0002,2. IV. 25,LETTER,DATE,1
+letter_0002,Akademija,LETTER,ORG,1
+letter_0002,Beograd,LETTER,LOC,2
+letter_0002,Dobronić,LETTER,PER,1
+letter_0002,Ivo Andrić,LETTER,PER,1
+letter_0002,Poljska,LETTER,LOC,1
+letter_0002,Pripovetke,LETTER,MISC,1
+letter_0002,Sczepanska,LETTER,PER,1
+letter_0002,Srpska književna zadruga,LETTER,ORG,1
+letter_0003,10. V 1925,LETTER,DATE,1
+letter_0003,Beograd,LETTER,LOC,2
+letter_0003,Ivo Andrić,LETTER,PER,1
+letter_0004,28. XI 1925,LETTER,DATE,1
+letter_0004,28. XI. 25,LETTER,DATE,1
+letter_0004,Atina,LETTER,LOC,2
+letter_0004,Carigrad,LETTER,LOC,1
+letter_0004,Ivo Andrić,LETTER,PER,1
+letter_0005,24. II 1926,LETTER,DATE,1
+letter_0005,24. II. 26,LETTER,DATE,1
+letter_0005,Agramer Tagblatt,LETTER,ORG,1
+letter_0005,Beograd,LETTER,LOC,2
+letter_0005,Dubrovnik,LETTER,LOC,1
+letter_0005,Ivo Andrić,LETTER,PER,1
+letter_0005,Ivo Vojnović,LETTER,PER,1
+letter_0006,13. VII 1926,LETTER,DATE,1
+letter_0006,13. VII. 26,LETTER,DATE,1
+letter_0006,Austrija,LETTER,LOC,1
+letter_0006,Eisenkappel,LETTER,LOC,1
+letter_0006,Ivo Andrić,LETTER,PER,1
+letter_0006,Villach,LETTER,LOC,1
+letter_0006,Višegrad,LETTER,LOC,2
+letter_0006,Zdenka Marković,LETTER,PER,1
+letter_0007,20. X 1926,LETTER,DATE,1
+letter_0007,20. X. 26,LETTER,DATE,1
+letter_0007,Beograd,LETTER,LOC,1
+letter_0007,Ivo Andrić,LETTER,PER,1
+letter_0008,2 februara 1927,LETTER,DATE,1
+letter_0008,2. II 1927,LETTER,DATE,1
+letter_0008,Ivo Andrić,LETTER,PER,1
+letter_0008,Marseille,LETTER,LOC,1
+letter_0008,St. Jacques,LETTER,LOC,1
+letter_0008,Višegrad,LETTER,LOC,1
+letter_0009,20 aprila 1927,LETTER,DATE,1
+letter_0009,20. IV 1927,LETTER,DATE,1
+letter_0009,30. IX 1927,LETTER,DATE,1
+letter_0009,Arles,LETTER,LOC,1
+letter_0009,Avignon,LETTER,LOC,2
+letter_0009,Ivo Andrić,LETTER,PER,1
+letter_0009,Marseille,LETTER,LOC,2
+letter_0009,Nevistić,LETTER,PER,1
+letter_0009,Nîmes,LETTER,LOC,1
+letter_0009,Provansa,LETTER,LOC,1
+letter_0009,St. Jacques,LETTER,LOC,1
+letter_0009,Tadeusz Boy-Żeleński,LETTER,PER,1
+letter_0009,Vijenac,LETTER,ORG,1
+letter_0009,Zagreb,LETTER,LOC,1
+letter_0010,30. IX 1927,LETTER,DATE,1
+letter_0010,Grenoble,LETTER,LOC,1
+letter_0010,Ivo Andrić,LETTER,PER,1
+letter_0010,Marseille,LETTER,LOC,1
+letter_0010,St. Jacques,LETTER,LOC,1
+letter_0010,Zagreb,LETTER,LOC,1
+letter_0011,14 oktobra 1930,LETTER,DATE,1
+letter_0011,14. X 1930,LETTER,DATE,1
+letter_0011,Alpi,LETTER,LOC,1
+letter_0011,Beograd,LETTER,LOC,1
+letter_0011,Fribourg,LETTER,LOC,1
+letter_0011,Ivo Andrić,LETTER,PER,1
+letter_0011,Jurjevska ul. 19,LETTER,LOC,1
+letter_0011,Tugomir Alaupović,LETTER,PER,1
+letter_0011,Zagreb,LETTER,LOC,2
+letter_0011,Zdenka Marković,LETTER,PER,1
+letter_0011,Ženeva,LETTER,LOC,3
+letter_0012,18 oktobra 1930,LETTER,DATE,1
+letter_0012,18. X 1930,LETTER,DATE,1
+letter_0012,Endre Ady,LETTER,PER,1
+letter_0012,Hrvatska revija,LETTER,ORG,1
+letter_0012,Ivo Andrić,LETTER,PER,1
+letter_0012,Miroslav Krleža,LETTER,PER,1
+letter_0012,Ženeva,LETTER,LOC,2
+letter_0013,18. XI 1930,LETTER,DATE,1
+letter_0013,Gene,LETTER,LOC,1
+letter_0013,Ivo Andrić,LETTER,PER,1
+letter_0013,Zagreb,LETTER,LOC,1
+letter_0013,Ženeva,LETTER,LOC,1
+letter_0014,6 aprila 1932,LETTER,DATE,1
+letter_0014,6. IV 1932,LETTER,DATE,1
+letter_0014,Frankfurt,LETTER,LOC,1
+letter_0014,Franz Schütz,LETTER,PER,1
+letter_0014,Ivo Andrić,LETTER,PER,1
+letter_0014,Weimar,LETTER,LOC,1
+letter_0014,Zagreb,LETTER,LOC,2
+letter_0014,Ženeva,LETTER,LOC,2
+letter_0015,11. IV 1939,LETTER,DATE,1
+letter_0015,11. aprila 1939,LETTER,DATE,1
+letter_0015,Berlin,LETTER,LOC,1
+letter_0015,Bronisław Grabowski,LETTER,PER,1
+letter_0015,Dežmanova ul. 3/1,LETTER,LOC,1
+letter_0015,Ivo Andrić,LETTER,PER,1
+letter_0015,Krakow,LETTER,LOC,1
+letter_0015,Zagreb,LETTER,LOC,1
+letter_0015,Zdenka Marković,LETTER,PER,2

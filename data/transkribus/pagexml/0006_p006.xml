@@ -3,12 +3,12 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.44.0:model_id=442685:lm=none:date=08_06_2026_18:35</Creator>
         <Created>2026-06-08T16:05:32.847+02:00</Created>
-        <LastChange>2026-06-10T09:18:05.487+02:00</LastChange>
-        <TranskribusMetadata docId="16706883" pageId="121814717" pageNr="6" tsid="291425317" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=TLJASJQFJKWEINKXHTZPFHOP" xmlUrl="https://files.transkribus.eu/Get?id=THMAURMYUOJRKOTMSSOIPQFY" imageId="103449440"/>
+        <LastChange>2026-07-25T15:08:24.394+02:00</LastChange>
+        <TranskribusMetadata docId="16706883" pageId="121814717" pageNr="6" tsid="297764080" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=TLJASJQFJKWEINKXHTZPFHOP" xmlUrl="https://files.transkribus.eu/Get?id=RFTGQFVTHACVBGSKZDEPNNSX" imageId="103449440"/>
     </Metadata>
     <Page imageFilename="0006_p006.jpg" imageWidth="3508" imageHeight="2479">
         <ReadingOrder>
-            <OrderedGroup id="ro_1781075910682" caption="Regions reading order">
+            <OrderedGroup id="ro_1784984956300" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_1"/>
             </OrderedGroup>
@@ -221,7 +221,7 @@
                 <Coords points="1956,549 2380,555 2380,605 1956,599"/>
                 <Baseline points="1956,594 2001,594 2045,594 2090,594 2135,594 2180,594 2225,594 2269,597 2314,597 2359,597 2380,600"/>
                 <TextEquiv>
-                    <Unicode>Bron. Grabšowskoga.</Unicode>
+                    <Unicode>Bron. Grabowskoga.</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_1_tl_6" custom="readingOrder {index:5;}">
@@ -235,7 +235,7 @@
                 <Coords points="1956,650 3100,668 3100,718 1956,700"/>
                 <Baseline points="1956,695 2001,692 2045,692 2090,695 2135,695 2180,695 2225,695 2269,695 2314,695 2359,695 2404,695 2449,698 2493,698 2538,698 2583,701 2628,701 2673,701 2717,701 2762,701 2807,701 2852,704 2897,704 2941,704 2986,704 3031,707 3076,707 3100,713"/>
                 <TextEquiv>
-                    <Unicode>sevenjačkom svežinom podseća na davnašnji Uskrs,</Unicode>
+                    <Unicode>severnjačkom svežinom podseća na davnašnji Uskrs,</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_1_tl_8" custom="readingOrder {index:7;}">

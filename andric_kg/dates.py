@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import re
-from typing import Optional, Tuple
+from typing import List, Optional, Tuple
 
 MONTHS = {
     "i": 1, "ii": 2, "iii": 3, "iv": 4, "v": 5, "vi": 6, "vii": 7, "viii": 8, "ix": 9, "x": 10, "xi": 11, "xii": 12,
@@ -17,18 +17,46 @@ MONTHS = {
     "oktobar": 10, "oktobra": 10, "okt": 10,
     "novembar": 11, "novembra": 11, "nov": 11,
     "decembar": 12, "decembra": 12, "dec": 12,
-    "siječanj": 1, "sijecanj": 1,
-    "veljača": 2, "veljaca": 2,
-    "ožujak": 3, "ozujak": 3,
-    "travanj": 4,
-    "lipanj": 6,
-    "srpanj": 7,
-    "kolovoz": 8,
-    "rujan": 9,
-    "listopad": 10,
-    "studeni": 11,
-    "prosinac": 12,
+    "siječanj": 1, "siječnja": 1, "sijecanj": 1, "sijecnja": 1,
+    "veljača": 2, "veljače": 2, "veljaca": 2, "veljace": 2,
+    "ožujak": 3, "ožujka": 3, "ozujak": 3, "ozujka": 3,
+    "travanj": 4, "travnja": 4,
+    "svibanj": 5, "svibnja": 5,
+    "lipanj": 6, "lipnja": 6,
+    "srpanj": 7, "srpnja": 7,
+    "kolovoz": 8, "kolovoza": 8,
+    "rujan": 9, "rujna": 9,
+    "listopad": 10, "listopada": 10,
+    "studeni": 11, "studenog": 11, "studenoga": 11,
+    "prosinac": 12, "prosinca": 12,
 }
+
+ROMAN_MONTHS = frozenset(
+    {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"}
+)
+
+# Longest alternatives come first so, for example, ``septembra`` is preferred
+# to the abbreviation ``sep``. Word boundaries prevent either one from being
+# accepted as only the prefix of an unknown word.
+TEXT_MONTH_PATTERN = "|".join(
+    re.escape(month)
+    for month in sorted(MONTHS.keys() - ROMAN_MONTHS, key=len, reverse=True)
+)
+
+DATE_MENTION_PATTERNS = [
+    # 2. II 1927 / 2. II. 1927 / 11. 1. 1914
+    re.compile(
+        r"\b\d{1,2}\s*\.\s*(?:[IVXLCDM]+|\d{1,2})(?:\s*\.\s*|\s+)\d{2,4}\b",
+        re.I,
+    ),
+    # 2 februara 1927 / 20. aprila 1927 / 2. feb. 1927
+    re.compile(
+        rf"\b\d{{1,2}}\s*\.?\s+(?:{TEXT_MONTH_PATTERN})\.?\s+\d{{2,4}}\b",
+        re.I,
+    ),
+    # Standalone four-digit years. Nested years are removed by find_date_spans.
+    re.compile(r"\b\d{4}\b"),
+]
 
 PLACE_DATE_PATTERNS = [
     # Beograd 24. II. 26 / Berlin 11. aprila 1939 g.
@@ -42,6 +70,33 @@ PLACE_DATE_PATTERNS = [
 DATE_ONLY_PATTERNS = [
     re.compile(r"(?P<day>\d{1,2})\s*\.\s*(?P<month>[IVXLCDM]+|\d{1,2}|[A-Za-zČĆŽŠĐčćžšđ]+)\.?\s*(?P<year>\d{2,4})", re.I),
 ]
+
+
+def find_date_spans(text: str) -> List[Tuple[int, int]]:
+    """Return non-overlapping date spans, preferring complete expressions.
+
+    The patterns deliberately include standalone years as a fallback. When a
+    year is part of a complete expression such as ``20 aprila 1927``, only the
+    complete expression is returned.
+    """
+    candidates = {
+        (match.start(), match.end())
+        for pattern in DATE_MENTION_PATTERNS
+        for match in pattern.finditer(text)
+    }
+
+    complete_spans = []
+    for start, end in candidates:
+        is_contained = any(
+            other_start <= start
+            and end <= other_end
+            and (other_start, other_end) != (start, end)
+            for other_start, other_end in candidates
+        )
+        if not is_contained:
+            complete_spans.append((start, end))
+
+    return sorted(complete_spans)
 
 
 def normalize_year(y: str) -> int:

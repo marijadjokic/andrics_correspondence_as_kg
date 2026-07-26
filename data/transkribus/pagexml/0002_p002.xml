@@ -3,12 +3,12 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.44.0:model_id=442685:lm=none:date=08_06_2026_17:33</Creator>
         <Created>2026-06-08T16:35:26.088066</Created>
-        <LastChange>2026-06-10T09:13:14.621+02:00</LastChange>
-        <TranskribusMetadata docId="16706883" pageId="121814714" pageNr="2" tsid="291425031" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=UAZMABKSFAEAWQAEYBCPHSMP" xmlUrl="https://files.transkribus.eu/Get?id=FOHPXLDCNBTPFQMTTEDYTRGH" imageId="103449438"/>
+        <LastChange>2026-07-25T14:53:45.540+02:00</LastChange>
+        <TranskribusMetadata docId="16706883" pageId="121814714" pageNr="2" tsid="297762421" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=UAZMABKSFAEAWQAEYBCPHSMP" xmlUrl="https://files.transkribus.eu/Get?id=SPDJXYEHRCHLXTLMNFZEJMNZ" imageId="103449438"/>
     </Metadata>
     <Page imageFilename="0002_p002.jpg" imageWidth="3508" imageHeight="2479">
         <ReadingOrder>
-            <OrderedGroup id="ro_1781075910613" caption="Regions reading order">
+            <OrderedGroup id="ro_1784984956259" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_1"/>
                 <RegionRefIndexed index="2" regionRef="r_2"/>
@@ -20,7 +20,7 @@
                 <Coords points="755,253 1209,250 1209,300 755,303"/>
                 <Baseline points="755,298 761,298 806,295 851,295 896,298 940,295 985,295 1030,298 1075,295 1120,298 1164,298 1209,295"/>
                 <TextEquiv>
-                    <Unicode>Атина, 28, XI 1925.</Unicode>
+                    <Unicode>Атина, 28. XI 1925.</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_tl_2" custom="readingOrder {index:1;}">
@@ -131,7 +131,7 @@
                 <Coords points="409,1791 1553,1800 1553,1850 409,1841"/>
                 <Baseline points="409,1836 453,1836 498,1836 543,1836 588,1839 633,1839 677,1839 722,1839 767,1839 812,1839 857,1839 901,1839 946,1842 991,1839 1036,1842 1081,1842 1126,1842 1170,1842 1215,1845 1260,1845 1305,1845 1350,1845 1394,1845 1439,1845 1484,1845 1529,1845 1553,1845"/>
                 <TextEquiv>
-                    <Unicode>zato što je i njemu urnrla majka i što je se on tako živo</Unicode>
+                    <Unicode>zato što je i njemu umrla majka i što je se on tako živo</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_1_tl_12" custom="readingOrder {index:11;}">

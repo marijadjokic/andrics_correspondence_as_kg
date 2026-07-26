@@ -3,12 +3,12 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.44.0:model_id=442685:lm=none:date=08_06_2026_17:46</Creator>
         <Created>2026-06-08T16:05:32.601+02:00</Created>
-        <LastChange>2026-06-10T09:16:12.564+02:00</LastChange>
-        <TranskribusMetadata docId="16706883" pageId="121814715" pageNr="4" tsid="291425163" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=TDNKNPUDIGELYHKBFXBOPOYW" xmlUrl="https://files.transkribus.eu/Get?id=FNTNBWZZGFOVNIGTGUPYXXKR" imageId="103449423"/>
+        <LastChange>2026-07-25T15:00:13.154+02:00</LastChange>
+        <TranskribusMetadata docId="16706883" pageId="121814715" pageNr="4" tsid="297763196" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=TDNKNPUDIGELYHKBFXBOPOYW" xmlUrl="https://files.transkribus.eu/Get?id=CGRIOEFHIEXSCBOYLTQDLKOK" imageId="103449423"/>
     </Metadata>
     <Page imageFilename="0004_p004.jpg" imageWidth="3508" imageHeight="2479">
         <ReadingOrder>
-            <OrderedGroup id="ro_1781075910651" caption="Regions reading order">
+            <OrderedGroup id="ro_1784984956281" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_1"/>
                 <RegionRefIndexed index="2" regionRef="r_2"/>
@@ -21,7 +21,7 @@
                 <Coords points="579,202 1618,202 1618,252 579,252"/>
                 <Baseline points="579,247 624,247 669,247 713,247 758,244 803,247 848,244 893,244 937,247 982,247 1027,247 1072,247 1117,247 1161,247 1206,247 1251,247 1296,247 1341,247 1385,244 1430,247 1475,247 1520,247 1565,247 1609,247 1618,247"/>
                 <TextEquiv>
-                    <Unicode>Nedavno je bio ovde poliski pisac Boy-Želenski i</Unicode>
+                    <Unicode>Nedavno je bio ovde poljski pisac Boy-Želenski i</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_tl_2" custom="readingOrder {index:1;}">
@@ -70,7 +70,7 @@
                 <Coords points="480,552 1281,558 1281,608 480,602"/>
                 <Baseline points="480,597 525,597 570,597 615,597 660,597 704,597 749,597 794,597 839,597 884,597 928,597 973,597 1018,597 1063,597 1108,597 1152,597 1197,597 1242,597 1281,603"/>
                 <TextEquiv>
-                    <Unicode>obećao. Može li se u njemu saradivati?</Unicode>
+                    <Unicode>obećao. Može li se u njemu sarađivati?</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_tl_9" custom="readingOrder {index:8;}">

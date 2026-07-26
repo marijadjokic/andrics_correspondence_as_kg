@@ -39,8 +39,8 @@ def main() -> None:
     parser.add_argument(
         "--png-label-font-size",
         type=int,
-        default=16,
-        help="Font size for node labels in the PNG network visualization. Default: 16",
+        default=18,
+        help="Font size for node labels in the PNG network visualization. Default: 18",
     )
 
     parser.add_argument(
@@ -57,26 +57,71 @@ def main() -> None:
         help="Node size for the PNG network visualization. Default: 1100",
     )
 
+    parser.add_argument(
+        "--figure-width",
+        type=int,
+        default=30,
+        help="PNG canvas width in inches. Larger spreads nodes further apart. Default: 30",
+    )
+
+    parser.add_argument(
+        "--figure-height",
+        type=int,
+        default=22,
+        help="PNG canvas height in inches. Default: 22",
+    )
+
+    parser.add_argument(
+        "--dpi",
+        type=int,
+        default=400,
+        help="PNG output resolution (dots per inch). 300-400+ recommended for poster printing. Default: 400",
+    )
+
+    parser.add_argument(
+        "--layout-k",
+        type=float,
+        default=1.4,
+        help="Spring-layout node spacing; higher values reduce overlap in dense clusters. Default: 1.4",
+    )
+
+    parser.add_argument(
+        "--layout-iterations",
+        type=int,
+        default=300,
+        help="Spring-layout iteration count; higher settles into a cleaner layout. Default: 300",
+    )
+
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Random seed for the layout, for reproducible node placement. Default: 42",
+    )
+
+    parser.add_argument(
+        "--no-legend",
+        action="store_true",
+        help="Disable the entity-type color legend on the PNG visualization.",
+    )
+
     args = parser.parse_args()
 
     cfg = load_config(args.config)
 
     out_dir = Path(cfg["output"]["dir"])
 
-    letters_path = out_dir / cfg["output"]["letters_csv"]
-    mentions_path = out_dir / cfg["output"]["mentions_csv"]
+    mentions_path = out_dir / cfg["output"]["ner_entities_csv"]
     entities_path = out_dir / cfg["output"]["entities_csv"]
 
     edges_csv = out_dir / "entity_network_edges.csv"
     output_png = out_dir / "entity_network.png"
     output_html = out_dir / "entity_network.html"
 
-    letters = read_csv_records(letters_path)
     mentions = read_csv_records(mentions_path)
     entities = read_csv_records(entities_path)
 
     export_network_edges(
-        letters=letters,
         mentions=mentions,
         entities=entities,
         output_csv=edges_csv,
@@ -87,6 +132,13 @@ def main() -> None:
         output_png=output_png,
         label_font_size=args.png_label_font_size,
         node_size=args.node_size,
+        figure_width=args.figure_width,
+        figure_height=args.figure_height,
+        dpi=args.dpi,
+        layout_k=args.layout_k,
+        layout_iterations=args.layout_iterations,
+        seed=args.seed,
+        show_legend=not args.no_legend,
     )
 
     write_pyvis_html(

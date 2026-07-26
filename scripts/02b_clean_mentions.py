@@ -2,6 +2,7 @@
 
 import sys
 from pathlib import Path
+import re
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
@@ -10,9 +11,8 @@ if str(PROJECT_ROOT) not in sys.path:
 import pandas as pd
 
 
-INPUT = PROJECT_ROOT / "data/output/mentions.csv"
-RAW_BACKUP = PROJECT_ROOT / "data/output/mentions_raw.csv"
-OUTPUT = PROJECT_ROOT / "data/output/mentions.csv"
+INPUT = PROJECT_ROOT / "data/output/ner_entities.csv"
+OUTPUT = PROJECT_ROOT / "data/output/ner_entities_cleaned.csv"
 
 
 ALIASES = {
@@ -27,10 +27,10 @@ ALIASES = {
     "Krleže": "Miroslav Krleža",
     "Andriji Ady": "Endre Ady",
     "Boy-Želenski": "Tadeusz Boy-Żeleński",
-    "Bron. Grabšowskoga": "Bronisław Grabowski",
+    "Bron. Grabowskoga": "Bronisław Grabowski",
     "Fr. Schützom": "Franz Schütz",
     "Nevistić": "Nevistić",
-     "Dobronića": "Dobronić",
+    "Dobronića": "Dobronić",
 
     # Places
     "Београд": "Beograd",
@@ -51,6 +51,7 @@ ALIASES = {
     "Poljsku": "Poljska",
     "Provenci": "Provansa",
     "Avignona": "Avignon",
+    "Nimes": "Nîmes",
     "Carigrada": "Carigrad",
     "Женева": "Ženeva",
     "Женеваенева": "Ženeva",
@@ -63,13 +64,13 @@ ALIASES = {
     "Francuze": "Francuzi",
     "Alpe": "Alpi",
     
-    "ArlesNimes": "Arles" + "Nîmes",
+    "ArlesNimes": "Arles" + "Nimes",
     "Eisen Kappel Karnten": "Eisenkappel",
 
     # Organisations / publications / works
     "Tagblatta": "Agramer Tagblatt",
     "Hrvatske Revije": "Hrvatska revija",
-    "Srp. Kniiž. Zadruzi": "Srpska književna zadruga",
+    "Srp. Knjiž. Zadruzi": "Srpska književna zadruga",
     "Pripovetke": "Pripovetke",
     "Akademije": "Akademija",
 
@@ -84,6 +85,7 @@ ALIASES = {
 "Maрсеј": "Marseille",
 "Maрсе": "Marseille",
 "Avignona": "Avignon",
+"Nimes": "Nîmes",
 "Provenci": "Provansa",
 "Grenobl": "Grenoble",
 "Francusku": "Francuska",
@@ -92,7 +94,7 @@ ALIASES = {
 "Zdenka": "Zdenka Marković",
 "Tugomira Alaupovića": "Tugomir Alaupović",
 "Andriji Ady": "Endre Ady",
-"Bron. Grabšowskoga": "Bronisław Grabowski",
+"Bron. Grabowskoga": "Bronisław Grabowski",
 "Fr. Schützom": "Franz Schütz",
 
 # Additional organizations / publications
@@ -263,8 +265,9 @@ def split_merged_entities(df: pd.DataFrame) -> pd.DataFrame:
     Split OCR/NER-merged entities that should be represented as
     separate entities in the knowledge graph.
 
-    Example:
+    Examples:
         ArlesNimes / ArlesNîmes -> Arles + Nîmes
+        Arles — Nimes -> Arles + Nîmes
     """
     new_rows = []
 
@@ -283,12 +286,27 @@ def split_merged_entities(df: pd.DataFrame) -> pd.DataFrame:
             row1["score"] = score
 
             row2 = row.copy()
-            row2["text"] = "Nîmes"
+            row2["text"] = "Nimes"
             row2["start"] = start + len("Arles")
             row2["end"] = int(row["end"])
             row2["score"] = score
 
             new_rows.extend([row1, row2])
+        elif row["label"] == "LOC" and re.search(r"\s+[–—-]\s+", text):
+            start = int(row["start"])
+            score = float(row["score"])
+
+            for match in re.finditer(r"[^–—-]+", text):
+                part = clean_surface(match.group(0))
+                if not part:
+                    continue
+
+                part_row = row.copy()
+                part_row["text"] = normalize_entity_label(part)
+                part_row["start"] = start + match.start() + (len(match.group(0)) - len(match.group(0).lstrip()))
+                part_row["end"] = part_row["start"] + len(part)
+                part_row["score"] = score
+                new_rows.append(part_row)
         else:
             new_rows.append(row)
 
@@ -296,9 +314,6 @@ def split_merged_entities(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     df = pd.read_csv(INPUT)
-
-    if not RAW_BACKUP.exists():
-        RAW_BACKUP.write_text(INPUT.read_text(encoding="utf-8"), encoding="utf-8")
 
     df = merge_wordpieces(df)
     df = remove_contained_dates(df)

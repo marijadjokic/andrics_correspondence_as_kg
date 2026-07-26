@@ -3,12 +3,12 @@
     <Metadata>
         <Creator>prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=2.44.0:model_id=442685:lm=none:date=08_06_2026_18:29</Creator>
         <Created>2026-06-08T16:05:32.699+02:00</Created>
-        <LastChange>2026-06-10T09:17:11.174+02:00</LastChange>
-        <TranskribusMetadata docId="16706883" pageId="121814716" pageNr="5" tsid="291425207" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=WXGYCKLKQATVGGORSBSXXPEX" xmlUrl="https://files.transkribus.eu/Get?id=AYPXFAIZZWFESTIUYYUJLCWL" imageId="103449439"/>
+        <LastChange>2026-07-25T15:02:02.208+02:00</LastChange>
+        <TranskribusMetadata docId="16706883" pageId="121814716" pageNr="5" tsid="297763727" status="IN_PROGRESS" userId="246057" imgUrl="https://files.transkribus.eu/Get?fileType=view&amp;id=WXGYCKLKQATVGGORSBSXXPEX" xmlUrl="https://files.transkribus.eu/Get?id=QQHHOGEFLORRUYHPVLZUFPWB" imageId="103449439"/>
     </Metadata>
     <Page imageFilename="0005_p005.jpg" imageWidth="3508" imageHeight="2479">
         <ReadingOrder>
-            <OrderedGroup id="ro_1781075910672" caption="Regions reading order">
+            <OrderedGroup id="ro_1784984956292" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="r"/>
                 <RegionRefIndexed index="1" regionRef="r_1"/>
                 <RegionRefIndexed index="2" regionRef="r_2"/>
@@ -28,7 +28,7 @@
                 <Coords points="468,241 1603,250 1603,300 468,291"/>
                 <Baseline points="468,286 513,289 558,286 603,286 648,289 692,286 737,289 782,289 827,286 872,289 916,289 961,289 1006,289 1051,289 1096,289 1140,289 1185,289 1230,292 1275,289 1320,289 1364,292 1409,289 1454,289 1499,289 1544,289 1588,289 1603,295"/>
                 <TextEquiv>
-                    <Unicode>mrtva i dosadna Varoš, ali posao je u njoj intenzivan i</Unicode>
+                    <Unicode>mrtva i dosadna varoš, ali posao je u njoj intenzivan i</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_tl_3" custom="readingOrder {index:2;}">
@@ -263,7 +263,7 @@
                 <Coords points="2643,1158 3088,1167 3088,1217 2643,1208"/>
                 <Baseline points="2643,1203 2688,1200 2732,1203 2777,1203 2822,1203 2867,1203 2912,1206 2956,1206 3001,1206 3046,1209 3088,1212"/>
                 <TextEquiv>
-                    <Unicode>Geneve. 18 XI. 30 g.</Unicode>
+                    <Unicode>Geneve, 18 XI. 30 g.</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_3_tl_3" custom="readingOrder {index:2;}">
@@ -291,7 +291,7 @@
                 <Coords points="1956,1385 3100,1397 3100,1447 1956,1435"/>
                 <Baseline points="1956,1430 2001,1430 2045,1433 2090,1433 2135,1433 2180,1433 2225,1433 2269,1433 2314,1433 2359,1436 2404,1436 2449,1436 2493,1436 2538,1436 2583,1436 2628,1436 2673,1439 2717,1442 2762,1439 2807,1439 2852,1442 2897,1442 2941,1442 2986,1439 3031,1442 3076,1442 3100,1442"/>
                 <TextEquiv>
-                    <Unicode>Vaš telefon se oglušio u poslednioi minuti, pred sam</Unicode>
+                    <Unicode>Vaš telefon se oglušio u poslednjoi minuti, pred sam</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="r_3_tl_7" custom="readingOrder {index:6;}">

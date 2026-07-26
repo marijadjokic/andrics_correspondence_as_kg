@@ -18,7 +18,6 @@ def _read_edges(edges_csv: Path) -> List[dict]:
 
 
 def export_network_edges(
-    letters: List[dict],
     mentions: List[dict],
     entities: List[dict],
     output_csv: Path,
@@ -78,16 +77,33 @@ def export_network_edges(
             )
 
 
+NODE_TYPE_LABELS = {
+    "LETTER": "Letter",
+    "PER": "Person",
+    "LOC": "Place",
+    "ORG": "Organization",
+    "MISC": "Miscellaneous",
+    "DATE": "Date",
+    "ENTITY": "Other",
+}
+
+
 def plot_network(
     edges_csv: Path,
     output_png: Path,
-    label_font_size: int = 16,
+    label_font_size: int = 18,
     node_size: int = 1100,
-    figure_width: int = 18,
-    figure_height: int = 14,
+    figure_width: int = 30,
+    figure_height: int = 22,
+    dpi: int = 400,
+    layout_k: float = 1.4,
+    layout_iterations: int = 300,
+    seed: int = 42,
+    show_legend: bool = True,
 ) -> None:
     """
-    Create a static PNG network visualization.
+    Create a static PNG network visualization sized for large-format
+    (poster) printing.
 
     Parameters
     ----------
@@ -95,8 +111,23 @@ def plot_network(
         Controls the size of node labels in the PNG.
     node_size:
         Controls the base size of nodes in the PNG.
+    figure_width, figure_height:
+        Canvas size in inches. Larger canvases spread nodes further
+        apart (in physical space) without shrinking labels, which is
+        the main lever for reducing label overlap on a poster print.
+    dpi:
+        Output resolution. 300-400 is print-quality for large posters.
+    layout_k:
+        Optimal spring-layout node spacing. Higher values push nodes
+        further apart, reducing overlap in dense clusters.
+    layout_iterations:
+        Number of spring-layout iterations; higher settles into a more
+        untangled layout at the cost of longer runtime.
+    show_legend:
+        Whether to draw a legend mapping node color to entity type.
     """
 
+    import matplotlib.patches as mpatches
     import matplotlib.pyplot as plt
     import networkx as nx
 
@@ -136,13 +167,13 @@ def plot_network(
 
     # Basic type-based colors for readability.
     color_by_type = {
-        "LETTER": "#d9e8fb",
-        "PER": "#f7c6c7",
-        "LOC": "#cfe8cf",
-        "ORG": "#f9e5b5",
-        "MISC": "#e3d7f4",
-        "DATE": "#eeeeee",
-        "ENTITY": "#dddddd",
+        "LETTER": "#8fb8ec",
+        "PER": "#ef9a9a",
+        "LOC": "#a5d6a7",
+        "ORG": "#f6c667",
+        "MISC": "#c5b3e0",
+        "DATE": "#cfcfcf",
+        "ENTITY": "#bdbdbd",
     }
 
     node_colors = [
@@ -150,20 +181,21 @@ def plot_network(
         for node in G.nodes()
     ]
 
-    plt.figure(figsize=(figure_width, figure_height))
+    fig, ax = plt.subplots(figsize=(figure_width, figure_height))
 
     pos = nx.spring_layout(
         G,
-        k=0.65,
-        iterations=120,
-        seed=42,
+        k=layout_k,
+        iterations=layout_iterations,
+        seed=seed,
         weight="weight",
     )
 
     nx.draw_networkx_edges(
         G,
         pos,
-        alpha=0.35,
+        ax=ax,
+        alpha=0.3,
         width=[
             max(0.6, min(3.0, G.edges[edge].get("weight", 1)))
             for edge in G.edges()
@@ -173,6 +205,7 @@ def plot_network(
     nx.draw_networkx_nodes(
         G,
         pos,
+        ax=ax,
         node_size=node_sizes,
         node_color=node_colors,
         edgecolors="#555555",
@@ -180,17 +213,41 @@ def plot_network(
         alpha=0.95,
     )
 
+    # White halo behind labels so text stays legible over edges/nodes.
     nx.draw_networkx_labels(
         G,
         pos,
+        ax=ax,
         font_size=label_font_size,
         font_family="DejaVu Sans",
+        bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.65, "pad": 0.5},
     )
 
-    plt.axis("off")
-    plt.tight_layout()
-    plt.savefig(output_png, dpi=300, bbox_inches="tight")
-    plt.close()
+    if show_legend:
+        types_present = sorted(
+            {G.nodes[node].get("node_type", "ENTITY") for node in G.nodes()},
+            key=lambda t: list(color_by_type).index(t) if t in color_by_type else 99,
+        )
+        handles = [
+            mpatches.Patch(
+                facecolor=color_by_type.get(t, "#dddddd"),
+                edgecolor="#555555",
+                label=NODE_TYPE_LABELS.get(t, t),
+            )
+            for t in types_present
+        ]
+        ax.legend(
+            handles=handles,
+            loc="lower right",
+            fontsize=max(12, label_font_size - 4),
+            frameon=True,
+            title="Entity type",
+        )
+
+    ax.axis("off")
+    fig.tight_layout()
+    fig.savefig(output_png, dpi=dpi, bbox_inches="tight")
+    plt.close(fig)
 
 
 def write_pyvis_html(

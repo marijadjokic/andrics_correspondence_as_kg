@@ -23,11 +23,11 @@ def main() -> None:
 
     cfg = load_config(args.config)
     out_dir = Path(cfg["output"]["dir"])
-    letters = read_csv_records(out_dir / cfg["output"]["letters_csv"])
-    mentions = read_csv_records(out_dir / cfg["output"]["mentions_csv"])
+    letters = read_csv_records(out_dir / cfg["output"]["letters_fixed_csv"])
+    ner_entities = read_csv_records(out_dir / cfg["output"]["ner_entities_csv"])
     entities = read_csv_records(out_dir / cfg["output"]["entities_csv"])
 
-    g = build_rdf_graph(letters, entities, mentions, cfg)
+    g = build_rdf_graph(letters, entities, ner_entities, cfg)
     serialize_graph(g, out_dir, cfg["output"]["ttl"], cfg["output"]["jsonld"])
     print(f"Graph contains {len(g)} triples")
     print(f"Wrote {out_dir / cfg['output']['ttl']}")

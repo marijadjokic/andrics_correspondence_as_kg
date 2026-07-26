@@ -8,7 +8,23 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List
 
 import yaml
-from slugify import slugify
+
+
+def slugify(text: str, lowercase: bool = True, separator: str = "_") -> str:
+    text = text.strip()
+    text = text.replace("ß", "ss")
+    text = text.replace("æ", "ae").replace("ø", "o").replace("å", "a")
+    text = text.replace("Æ", "AE").replace("Ø", "O").replace("Å", "A")
+    text = text.replace("č", "c").replace("ć", "c").replace("ž", "z").replace("š", "s").replace("đ", "dj")
+    text = text.replace("Č", "C").replace("Ć", "C").replace("Ž", "Z").replace("Š", "S").replace("Đ", "Dj")
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = re.sub(r"[^\w\s-]", "", text)
+    text = text.strip().replace(" ", separator)
+    if lowercase:
+        text = text.lower()
+    text = re.sub(r"%s{2,}" % re.escape(separator), separator, text)
+    return text
 
 
 def dehyphenate_linebreaks(text: str) -> str:
@@ -23,9 +39,12 @@ def dehyphenate_linebreaks(text: str) -> str:
     if not text:
         return ""
 
-    # Join words split by hyphen at the end of a line.
+    # Join words split by a true hyphen at the end of a line.
+    # Do not treat en/em dashes as hyphenation markers: in text like
+    # "(Arles —\nNimes — Avignon)" the dash separates place names and
+    # must not collapse the newline into "ArlesNimes".
     text = re.sub(
-        r"([A-Za-zÀ-žА-Яа-яЉЊЂЋЏљњђћџČĆŽŠĐčćžšđ])\s*[-‐-‒–—]\s*\n\s*([A-Za-zÀ-žА-Яа-яЉЊЂЋЏљњђћџČĆŽŠĐčćžšđ])",
+        r"([A-Za-zÀ-žА-Яа-яЉЊЂЋЏљњђћџČĆŽŠĐčćžšđ])\s*[-‐‑]\s*\n\s*([A-Za-zÀ-žА-Яа-яЉЊЂЋЏљњђћџČĆŽŠĐčćžšđ])",
         r"\1\2",
         text,
     )

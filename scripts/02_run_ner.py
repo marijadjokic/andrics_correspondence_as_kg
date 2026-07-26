@@ -26,12 +26,12 @@ def main() -> None:
     cfg = load_config(args.config)
     out_dir = Path(cfg["output"]["dir"])
     letters_csv = Path(args.letters or out_dir / cfg["output"]["letters_csv"])
-    mentions_csv = Path(args.out or out_dir / cfg["output"]["mentions_csv"])
+    ner_entities_csv = Path(args.out or out_dir / cfg["output"]["ner_entities_csv"])
 
     letters = read_csv_records(letters_csv)
     mentions = run_ner_for_letters(letters, cfg)
-    write_csv_records(mentions_csv, mentions)
-    print(f"Wrote {len(mentions)} mentions to {mentions_csv}")
+    write_csv_records(ner_entities_csv, mentions)
+    print(f"Wrote {len(mentions)} mentions to {ner_entities_csv}")
 
 
 if __name__ == "__main__":
