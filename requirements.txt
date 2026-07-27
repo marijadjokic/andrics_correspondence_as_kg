@@ -9,8 +9,9 @@ python-slugify>=8.0.0
 networkx>=3.2.0
 matplotlib>=3.8.0
 
+# Optional Future Work
 # PDF page extraction before Transkribus upload
-pypdf>=4.0.0
+# pypdf>=4.0.0
 
 # NER
 transformers>=4.40.0
