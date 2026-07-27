@@ -270,9 +270,10 @@ Marseille         → http://www.wikidata.org/entity/Q23482
 
 ## 9. Use in the paper
 
-This repository supports a Digital Humanities and Semantic Web workflow for transforming literary correspondence into Linked Data. It demonstrates how OCR/ATR, NER, entity normalization, Wikidata linking, RDF modelling, SPARQL querying, and network visualization can be combined in a reproducible pipeline.
+This work will be presented at the [SEMANTiCS 2026](https://2026-eu.semantics.cc/) conference, at the [Poster session](https://2026-eu.semantics.cc/page/accepted_posters.html).
 
-The workflow was developed for a selected subset of Ivo Andrić’s correspondence with Zdenka Marković and is intended as a proof of concept for larger-scale modelling of correspondence data as knowledge graphs.
+Currently, please cite this work as this GitHub repository. After the conference, please cite the corresponding SEMANTiCS 2026 poster paper (citation details will be added here once available).
+
 
 ## 10. Online resources
 
