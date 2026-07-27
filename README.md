@@ -268,7 +268,7 @@ Zagreb            → http://www.wikidata.org/entity/Q1435
 Marseille         → http://www.wikidata.org/entity/Q23482
 ```
 
-## 9. Use in the paper
+## 9. Cite this work
 
 This work will be presented at the [SEMANTiCS 2026](https://2026-eu.semantics.cc/) conference, at the [Poster session](https://2026-eu.semantics.cc/page/accepted_posters.html).
 
