@@ -100,6 +100,7 @@ def plot_network(
     layout_iterations: int = 300,
     seed: int = 42,
     show_legend: bool = True,
+    legend_font_size: int | None = None,
 ) -> None:
     """
     Create a static PNG network visualization sized for large-format
@@ -125,6 +126,10 @@ def plot_network(
         untangled layout at the cost of longer runtime.
     show_legend:
         Whether to draw a legend mapping node color to entity type.
+    legend_font_size:
+        Font size for legend labels, title, and (since legend swatch
+        size scales with font size) the color swatches themselves.
+        Defaults to max(12, label_font_size - 4) when not given.
     """
 
     import matplotlib.patches as mpatches
@@ -236,13 +241,17 @@ def plot_network(
             )
             for t in types_present
         ]
-        ax.legend(
+        resolved_legend_font_size = (
+            legend_font_size if legend_font_size is not None else max(12, label_font_size - 4)
+        )
+        legend = ax.legend(
             handles=handles,
             loc="lower right",
-            fontsize=max(12, label_font_size - 4),
+            fontsize=resolved_legend_font_size,
             frameon=True,
             title="Entity type",
         )
+        legend.get_title().set_fontsize(resolved_legend_font_size)
 
     ax.axis("off")
     fig.tight_layout()

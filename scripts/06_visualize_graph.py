@@ -105,6 +105,14 @@ def main() -> None:
         help="Disable the entity-type color legend on the PNG visualization.",
     )
 
+    parser.add_argument(
+        "--legend-font-size",
+        type=int,
+        default=None,
+        help="Font size for the legend labels, title, and swatches on the PNG visualization. "
+        "Default: max(12, png-label-font-size - 4).",
+    )
+
     args = parser.parse_args()
 
     cfg = load_config(args.config)
@@ -139,6 +147,7 @@ def main() -> None:
         layout_iterations=args.layout_iterations,
         seed=args.seed,
         show_legend=not args.no_legend,
+        legend_font_size=args.legend_font_size,
     )
 
     write_pyvis_html(
