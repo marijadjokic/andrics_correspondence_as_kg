@@ -279,8 +279,4 @@ Currently, please cite this work as this GitHub repository. After the conference
 
 The source code and supporting materials required to reproduce the pipeline are available in this GitHub repository.
 
-The Transkribus model used in this work is available at:
-
-```text
-https://www.transkribus.org/models/burgenland-croatian-typewritten-2010-2019
-```
+The Transkribus model used in this work is available at [https://www.transkribus.org/models/burgenland-croatian-typewritten-2010-2019](https://www.transkribus.org/models/burgenland-croatian-typewritten-2010-2019). 
