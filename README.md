@@ -280,3 +280,17 @@ Currently, please cite this work as this GitHub repository. After the conference
 The source code and supporting materials required to reproduce the pipeline are available in this GitHub repository.
 
 The Transkribus model used in this work is available at [https://www.transkribus.org/models/burgenland-croatian-typewritten-2010-2019](https://www.transkribus.org/models/burgenland-croatian-typewritten-2010-2019). 
+
+## 11. License and Rights
+
+The **knowledge graph structure, annotations, extracted entities, entity links, and derived metadata** in this repository are made available under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license, except where otherwise indicated.
+
+The licensed materials may be shared and adapted for **non-commercial purposes**, provided that appropriate attribution is given, a link to the license is provided, and any changes are indicated. Commercial use is not permitted without prior permission from the rights holder(s).
+
+The license applies only to material for which the authors of this repository hold the necessary rights. Copyright and other rights in the **original correspondence, transcribed letter texts, archival materials, images, publications, and other third-party source material** remain with their respective rights holders and are not transferred or licensed through this repository unless explicitly stated otherwise.
+
+Users are responsible for determining whether additional permissions are required for their intended use of third-party or source material. The dataset and accompanying materials are provided **“as is”**, without warranties regarding completeness, accuracy, non-infringement, or fitness for a particular purpose.
+
+The CC BY-NC 4.0 statement applies to the knowledge graph and derived data and does **not automatically apply to the software source code** in this repository.
+
+For the complete license and rights statement, see [`LICENSE.md`](LICENSE.md).
