@@ -10,7 +10,7 @@
         schema:Message ;
     dcterms:identifier "letter_0001" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0001_p001.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0001_p001.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0001/1>,
         <https://example.org/andric-letters/mention/letter_0001/2>,
         <https://example.org/andric-letters/mention/letter_0001/3>,
@@ -36,7 +36,7 @@ Mama Vam zahvaljuje na brizi i pozdravlja Vas."""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0002" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0001_p001.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0001_p001.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0002/10>,
         <https://example.org/andric-letters/mention/letter_0002/11>,
         <https://example.org/andric-letters/mention/letter_0002/12>,
@@ -89,7 +89,7 @@ Ivo Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0003" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0001_p001.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0001_p001.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0003/16>,
         <https://example.org/andric-letters/mention/letter_0003/17>,
         <https://example.org/andric-letters/mention/letter_0003/18>,
@@ -119,7 +119,7 @@ I. Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0004" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0002_p002.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0002_p002.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0004/20>,
         <https://example.org/andric-letters/mention/letter_0004/21>,
         <https://example.org/andric-letters/mention/letter_0004/22>,
@@ -146,7 +146,7 @@ Ivo Andrić
         schema:Message ;
     dcterms:identifier "letter_0005" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0002_p002.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0002_p002.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0005/26>,
         <https://example.org/andric-letters/mention/letter_0005/27>,
         <https://example.org/andric-letters/mention/letter_0005/28>,
@@ -186,7 +186,7 @@ Ivo Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0006" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0002_p002.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0002_p002.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0006/34>,
         <https://example.org/andric-letters/mention/letter_0006/35>,
         <https://example.org/andric-letters/mention/letter_0006/36>,
@@ -226,7 +226,7 @@ Karnten Austrija"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0007" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0003_p003.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0003_p003.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0007/43>,
         <https://example.org/andric-letters/mention/letter_0007/44>,
         <https://example.org/andric-letters/mention/letter_0007/45>,
@@ -257,7 +257,7 @@ Ivo Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0008" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0003_p003.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0003_p003.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0008/47>,
         <https://example.org/andric-letters/mention/letter_0008/48>,
         <https://example.org/andric-letters/mention/letter_0008/49>,
@@ -298,7 +298,7 @@ Molim Vas pišite mi na kućnu adresu."""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0009" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0003_p003.xml;0004_p004.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0003_p003.xml;zdenka_markovic/0004_p004.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0009/53>,
         <https://example.org/andric-letters/mention/letter_0009/54>,
         <https://example.org/andric-letters/mention/letter_0009/55>,
@@ -368,7 +368,7 @@ Maрсеј, 30. IX 1927."""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0010" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0004_p004.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0004_p004.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0010/69>,
         <https://example.org/andric-letters/mention/letter_0010/70>,
         <https://example.org/andric-letters/mention/letter_0010/71>,
@@ -406,7 +406,7 @@ Ivo Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0011" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0004_p004.xml;0005_p005.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0004_p004.xml;zdenka_markovic/0005_p005.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0011/75>,
         <https://example.org/andric-letters/mention/letter_0011/76>,
         <https://example.org/andric-letters/mention/letter_0011/77>,
@@ -475,7 +475,7 @@ Yougoslavie"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0012" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0005_p005.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0005_p005.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0012/89>,
         <https://example.org/andric-letters/mention/letter_0012/90>,
         <https://example.org/andric-letters/mention/letter_0012/91>,
@@ -516,7 +516,7 @@ I. Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0013" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0005_p005.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0005_p005.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0013/100>,
         <https://example.org/andric-letters/mention/letter_0013/101>,
         <https://example.org/andric-letters/mention/letter_0013/97>,
@@ -546,7 +546,7 @@ I. Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0014" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0006_p006.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0006_p006.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0014/102>,
         <https://example.org/andric-letters/mention/letter_0014/103>,
         <https://example.org/andric-letters/mention/letter_0014/104>,
@@ -596,7 +596,7 @@ I. Andrić"""@sr-Latn .
         schema:Message ;
     dcterms:identifier "letter_0015" ;
     dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
-    prov:hadPrimarySource "0006_p006.xml" ;
+    prov:hadPrimarySource "zdenka_markovic/0006_p006.xml" ;
     andric:hasMention <https://example.org/andric-letters/mention/letter_0015/112>,
         <https://example.org/andric-letters/mention/letter_0015/113>,
         <https://example.org/andric-letters/mention/letter_0015/114>,
@@ -636,6 +636,146 @@ I. Andrić.
 [Адреса:]
 Gospođica Zdenka Marković
 Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
+
+<https://example.org/andric-letters/letter/letter_0016> a andric:Letter,
+        schema:Message ;
+    dcterms:identifier "letter_0016" ;
+    dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
+    prov:hadPrimarySource "svetislav_cvijanovic/page001.xml" ;
+    andric:hasMention <https://example.org/andric-letters/mention/letter_0016/122>,
+        <https://example.org/andric-letters/mention/letter_0016/123>,
+        <https://example.org/andric-letters/mention/letter_0016/124>,
+        <https://example.org/andric-letters/mention/letter_0016/125>,
+        <https://example.org/andric-letters/mention/letter_0016/126>,
+        <https://example.org/andric-letters/mention/letter_0016/127>,
+        <https://example.org/andric-letters/mention/letter_0016/128>,
+        <https://example.org/andric-letters/mention/letter_0016/129>,
+        <https://example.org/andric-letters/mention/letter_0016/130>,
+        <https://example.org/andric-letters/mention/letter_0016/131> ;
+    schema:dateSent "1927-06-25"^^xsd:date ;
+    schema:locationCreated <https://example.org/andric-letters/entity/loc_marseille> ;
+    schema:mentions <https://example.org/andric-letters/entity/date_25_juna_1927>,
+        <https://example.org/andric-letters/entity/date_25_vi_1927>,
+        <https://example.org/andric-letters/entity/loc_marseille>,
+        <https://example.org/andric-letters/entity/misc_antologija_ljubavne_lirike>,
+        <https://example.org/andric-letters/entity/misc_antologija_najnovije_lirike>,
+        <https://example.org/andric-letters/entity/org_consulat_general_scs>,
+        <https://example.org/andric-letters/entity/per_bozidar_kovacevic>,
+        <https://example.org/andric-letters/entity/per_ivo_andric>,
+        <https://example.org/andric-letters/entity/per_svetislav_cvijanovic> ;
+    schema:pagination "1" ;
+    schema:recipient <https://example.org/andric-letters/entity/per_svetislav_cvijanovic> ;
+    schema:sender <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    schema:text """Mapcej, 25. VI 1927.
+Marseille 25 juna 1927
+Dragi gosp. Cvijanoviću,
+šaljem vam u prilogu 50 franaka i molim vas da
+budete ljubazni i da mi pošaljete Antologiju Lirike „Misli“ (poslednje izdanje, sa slikama) i Antologiju Ljubavne Lirike od g. Bož. Kovačevića.
+Ja sam proveo vrlo rđavu zimu, jer sam dva puta
+preboleo grip, i sada vučem posledice. Nadam se da ste
+vi i svi vaši zdravo i dobro. Kako ide naša književnost?
+Kupuje li se išta više ili je uvek isti zastoj?
+Pozdravlja vas sradačno
+Ivo Andrić
+Adresa:
+Consulat General SCS
+151, Corniche
+Marseille
+Prilog: 50 fr. fr."""@sr-Latn .
+
+<https://example.org/andric-letters/letter/letter_0017> a andric:Letter,
+        schema:Message ;
+    dcterms:identifier "letter_0017" ;
+    dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
+    prov:hadPrimarySource "vojmir_durbesic/page001.xml" ;
+    andric:hasMention <https://example.org/andric-letters/mention/letter_0017/132>,
+        <https://example.org/andric-letters/mention/letter_0017/133>,
+        <https://example.org/andric-letters/mention/letter_0017/134>,
+        <https://example.org/andric-letters/mention/letter_0017/135>,
+        <https://example.org/andric-letters/mention/letter_0017/136>,
+        <https://example.org/andric-letters/mention/letter_0017/137>,
+        <https://example.org/andric-letters/mention/letter_0017/138>,
+        <https://example.org/andric-letters/mention/letter_0017/139>,
+        <https://example.org/andric-letters/mention/letter_0017/140> ;
+    schema:dateSent "1914-01-11"^^xsd:date ;
+    schema:locationCreated <https://example.org/andric-letters/entity/loc_zagreb> ;
+    schema:mentions <https://example.org/andric-letters/entity/date_11_1_1914>,
+        <https://example.org/andric-letters/entity/date_11_i_1914>,
+        <https://example.org/andric-letters/entity/loc_bec>,
+        <https://example.org/andric-letters/entity/loc_zagreb>,
+        <https://example.org/andric-letters/entity/per_antun_gustav_matos>,
+        <https://example.org/andric-letters/entity/per_ivo_andric>,
+        <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    schema:pagination "1" ;
+    schema:recipient <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    schema:sender <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    schema:text """Загреб, 11. 1 1914.
+(Zagreb, 11. I. 1914).
+Moj dragi Vojko, dobićeš jedan neočekivan list; od
+zadnje karte ja sam preturio mnogo; angina, koju ne
+liječih dovoljno komplikovala se i morao sam biti oprezan: i bio sam operiran isti dan kad i g. A. G. Matoš;
+obojica na grlu pa (da) mi je ko proreko ne bih vjerovao. Sad je stvar prilično, već mogu i da jedem i izlazim, pa su izgledi da ću u utornik krenuti k tebi; zato
+ti i ne šaljem novca, a ako bih slučajno izostao — ne
+daj bože da bude gore — ja bih ti poslao.
+Pored najbolje volje i dostatna vremena (prvi put u
+Zagrebu) ne mogi ni danas da ti pišem, jer sam umoran
+i slab. Još mi poigravaju lječnikove škare po zubima i
+imam odvratnost za metal kao onaj koga klase i ne
+doklaše, tako da mi već nekolike petokrunke otfikariše
+g. lekaru. Antimetalum. Ide metal.
+Jedna operacija je užasno ružna stvar, a još je ružnije da se za tu rugobu i nužno plaća. Tako me je
+boljelo i tako sam oslabio da mislim da sam kažnjen
+već za sve grijehe i da su ispunjene sve želje mojih
+najgorih neprijatelja. I miran sam. Ako se to može biti.
+Da: i ako se smije biti.
+Do viđenja
+Tvoj Ivan
+(Vojmiru Durbešiću
+BEČ)"""@sr-Latn .
+
+<https://example.org/andric-letters/letter/letter_0018> a andric:Letter,
+        schema:Message ;
+    dcterms:identifier "letter_0018" ;
+    dcterms:isPartOf andric:andric-private-letters-1925-1941 ;
+    prov:hadPrimarySource "vojmir_durbesic/page001.xml" ;
+    andric:hasMention <https://example.org/andric-letters/mention/letter_0018/141>,
+        <https://example.org/andric-letters/mention/letter_0018/142>,
+        <https://example.org/andric-letters/mention/letter_0018/143>,
+        <https://example.org/andric-letters/mention/letter_0018/144>,
+        <https://example.org/andric-letters/mention/letter_0018/145>,
+        <https://example.org/andric-letters/mention/letter_0018/146>,
+        <https://example.org/andric-letters/mention/letter_0018/147>,
+        <https://example.org/andric-letters/mention/letter_0018/148>,
+        <https://example.org/andric-letters/mention/letter_0018/149> ;
+    schema:dateSent "1938-05-27"^^xsd:date ;
+    schema:locationCreated <https://example.org/andric-letters/entity/loc_beograd> ;
+    schema:mentions <https://example.org/andric-letters/entity/date_27_maja_1938>,
+        <https://example.org/andric-letters/entity/date_27_v_1938>,
+        <https://example.org/andric-letters/entity/loc_beograd>,
+        <https://example.org/andric-letters/entity/loc_zagreb>,
+        <https://example.org/andric-letters/entity/org_ministarstvo_inostranih_poslova>,
+        <https://example.org/andric-letters/entity/per_ivo_andric>,
+        <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    schema:pagination "1" ;
+    schema:recipient <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    schema:sender <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    schema:text """Београд, 27. V 1938.
+MINISTARSTVO INOSTRANIH POSLOVA
+MINISTAR POMOĆNIK
+Beograd, 27 maja 1938 g.
+Dragi Vojko,
+Oprosti što ti tek danas odgovaram na tvoje pismo
+od 4 o. m. Sad naime mogu da Ti javim da je tvoje
+kumče položilo ispite sa dobrim uspehom. Kako mi kažu mlađić čini vrlo dobar utisak. Nadam se da ni za
+prijem neće biti teškoća. Koliko stoji do mene zauzeću
+se za njega, zbog tvoje preporuke.
+Kad dođeš u Beograd, javi se.
+Srdačno Te pozdravlja tvoj stari drugi
+Ivo
+(Adresa:
+Dr Vojmir Durbešić, odvjetnik
+Kacićeva 1
+ZAGREB)"""@sr-Latn .
 
 <https://example.org/andric-letters/mention/letter_0001/1> a andric:EntityMention ;
     dcterms:type "LOC" ;
@@ -1726,12 +1866,272 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     andric:mentionText "Dežmanova ul. 3/1"@sr-Latn ;
     andric:startOffset 399 .
 
+<https://example.org/andric-letters/mention/letter_0016/122> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 19 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_25_vi_1927> ;
+    andric:mentionText "25. VI 1927"@sr-Latn ;
+    andric:startOffset 8 .
+
+<https://example.org/andric-letters/mention/letter_0016/123> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9525805711746216"^^xsd:float ;
+    andric:endOffset 30 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_marseille> ;
+    andric:mentionText "Marseille"@sr-Latn ;
+    andric:startOffset 21 .
+
+<https://example.org/andric-letters/mention/letter_0016/124> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 43 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_25_juna_1927> ;
+    andric:mentionText "25 juna 1927"@sr-Latn ;
+    andric:startOffset 31 .
+
+<https://example.org/andric-letters/mention/letter_0016/125> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.8471290469169617"^^xsd:float ;
+    andric:endOffset 67 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_svetislav_cvijanovic> ;
+    andric:mentionText "Svetislav Cvijanović"@sr-Latn ;
+    andric:startOffset 56 .
+
+<https://example.org/andric-letters/mention/letter_0016/126> a andric:EntityMention ;
+    dcterms:type "MISC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.99494469165802"^^xsd:float ;
+    andric:endOffset 174 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/misc_antologija_najnovije_lirike> ;
+    andric:mentionText "Antologija najnovije lirike"@sr-Latn ;
+    andric:startOffset 150 .
+
+<https://example.org/andric-letters/mention/letter_0016/127> a andric:EntityMention ;
+    dcterms:type "MISC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9364628195762634"^^xsd:float ;
+    andric:endOffset 236 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/misc_antologija_ljubavne_lirike> ;
+    andric:mentionText "Antologija ljubavne lirike"@sr-Latn ;
+    andric:startOffset 210 .
+
+<https://example.org/andric-letters/mention/letter_0016/128> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9958757162094116"^^xsd:float ;
+    andric:endOffset 258 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_bozidar_kovacevic> ;
+    andric:mentionText "Božidar Kovačević"@sr-Latn ;
+    andric:startOffset 243 .
+
+<https://example.org/andric-letters/mention/letter_0016/129> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9982281923294068"^^xsd:float ;
+    andric:endOffset 502 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    andric:mentionText "Ivo Andrić"@sr-Latn ;
+    andric:startOffset 492 .
+
+<https://example.org/andric-letters/mention/letter_0016/130> a andric:EntityMention ;
+    dcterms:type "ORG" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.904280960559845"^^xsd:float ;
+    andric:endOffset 535 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/org_consulat_general_scs> ;
+    andric:mentionText "Consulat General SCS"@sr-Latn ;
+    andric:startOffset 511 .
+
+<https://example.org/andric-letters/mention/letter_0016/131> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9131911396980286"^^xsd:float ;
+    andric:endOffset 555 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_marseille> ;
+    andric:mentionText "Marseille"@sr-Latn ;
+    andric:startOffset 537 .
+
+<https://example.org/andric-letters/mention/letter_0017/132> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 18 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_11_1_1914> ;
+    andric:mentionText "11. 1 1914"@sr-Latn ;
+    andric:startOffset 8 .
+
+<https://example.org/andric-letters/mention/letter_0017/133> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9745861291885376"^^xsd:float ;
+    andric:endOffset 27 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_zagreb> ;
+    andric:mentionText "Zagreb"@sr-Latn ;
+    andric:startOffset 21 .
+
+<https://example.org/andric-letters/mention/letter_0017/134> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 40 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_11_i_1914> ;
+    andric:mentionText "11. I. 1914"@sr-Latn ;
+    andric:startOffset 29 .
+
+<https://example.org/andric-letters/mention/letter_0017/135> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.6215498447418213"^^xsd:float ;
+    andric:endOffset 58 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    andric:mentionText "Vojmir Durbešić"@sr-Latn ;
+    andric:startOffset 53 .
+
+<https://example.org/andric-letters/mention/letter_0017/136> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9708165526390076"^^xsd:float ;
+    andric:endOffset 253 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_antun_gustav_matos> ;
+    andric:mentionText "Antun Gustav Matoš"@sr-Latn ;
+    andric:startOffset 242 .
+
+<https://example.org/andric-letters/mention/letter_0017/137> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9977268576622008"^^xsd:float ;
+    andric:endOffset 573 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_zagreb> ;
+    andric:mentionText "Zagreb"@sr-Latn ;
+    andric:startOffset 566 .
+
+<https://example.org/andric-letters/mention/letter_0017/138> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9269465804100036"^^xsd:float ;
+    andric:endOffset 1123 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    andric:mentionText "Ivo Andrić"@sr-Latn ;
+    andric:startOffset 1119 .
+
+<https://example.org/andric-letters/mention/letter_0017/139> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9363088607788086"^^xsd:float ;
+    andric:endOffset 1142 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    andric:mentionText "Vojmir Durbešić"@sr-Latn ;
+    andric:startOffset 1125 .
+
+<https://example.org/andric-letters/mention/letter_0017/140> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9391525387763976"^^xsd:float ;
+    andric:endOffset 1145 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_bec> ;
+    andric:mentionText "Beč"@sr-Latn ;
+    andric:startOffset 1143 .
+
+<https://example.org/andric-letters/mention/letter_0018/141> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9786961674690248"^^xsd:float ;
+    andric:endOffset 7 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_beograd> ;
+    andric:mentionText "Beograd"@sr-Latn ;
+    andric:startOffset 0 .
+
+<https://example.org/andric-letters/mention/letter_0018/142> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 19 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_27_v_1938> ;
+    andric:mentionText "27. V 1938"@sr-Latn ;
+    andric:startOffset 9 .
+
+<https://example.org/andric-letters/mention/letter_0018/143> a andric:EntityMention ;
+    dcterms:type "ORG" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.8051061034202576"^^xsd:float ;
+    andric:endOffset 52 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/org_ministarstvo_inostranih_poslova> ;
+    andric:mentionText "Ministarstvo inostranih poslova"@sr-Latn ;
+    andric:startOffset 21 .
+
+<https://example.org/andric-letters/mention/letter_0018/144> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9775691628456116"^^xsd:float ;
+    andric:endOffset 78 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_beograd> ;
+    andric:mentionText "Beograd"@sr-Latn ;
+    andric:startOffset 71 .
+
+<https://example.org/andric-letters/mention/letter_0018/145> a andric:EntityMention ;
+    dcterms:type "DATE" ;
+    prov:wasGeneratedBy "rule-based-date-v1" ;
+    andric:confidence "1.0"^^xsd:float ;
+    andric:endOffset 92 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/date_27_maja_1938> ;
+    andric:mentionText "27 maja 1938"@sr-Latn ;
+    andric:startOffset 80 .
+
+<https://example.org/andric-letters/mention/letter_0018/146> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9971331357955932"^^xsd:float ;
+    andric:endOffset 421 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_beograd> ;
+    andric:mentionText "Beograd"@sr-Latn ;
+    andric:startOffset 414 .
+
+<https://example.org/andric-letters/mention/letter_0018/147> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9974400997161864"^^xsd:float ;
+    andric:endOffset 474 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_ivo_andric> ;
+    andric:mentionText "Ivo Andrić"@sr-Latn ;
+    andric:startOffset 471 .
+
+<https://example.org/andric-letters/mention/letter_0018/148> a andric:EntityMention ;
+    dcterms:type "PER" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.9399245977401732"^^xsd:float ;
+    andric:endOffset 502 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/per_vojmir_durbesic> ;
+    andric:mentionText "Vojmir Durbešić"@sr-Latn ;
+    andric:startOffset 487 .
+
+<https://example.org/andric-letters/mention/letter_0018/149> a andric:EntityMention ;
+    dcterms:type "LOC" ;
+    prov:wasGeneratedBy "classla/bcms-bertic-ner" ;
+    andric:confidence "0.8074658513069153"^^xsd:float ;
+    andric:endOffset 531 ;
+    andric:mentionOf <https://example.org/andric-letters/entity/loc_zagreb> ;
+    andric:mentionText "Zagreb"@sr-Latn ;
+    andric:startOffset 514 .
+
 <https://example.org/andric-letters/entity/date_10_v_1925> a schema:Date ;
     rdfs:label "10. V 1925"@sr-Latn ;
     dcterms:type "DATE" .
 
+<https://example.org/andric-letters/entity/date_11_1_1914> a schema:Date ;
+    rdfs:label "11. 1 1914"@sr-Latn ;
+    dcterms:type "DATE" .
+
 <https://example.org/andric-letters/entity/date_11_aprila_1939> a schema:Date ;
     rdfs:label "11. aprila 1939"@sr-Latn ;
+    dcterms:type "DATE" .
+
+<https://example.org/andric-letters/entity/date_11_i_1914> a schema:Date ;
+    rdfs:label "11. I. 1914"@sr-Latn ;
     dcterms:type "DATE" .
 
 <https://example.org/andric-letters/entity/date_11_ii_1925> a schema:Date ;
@@ -1802,6 +2202,22 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     rdfs:label "24. II. 26"@sr-Latn ;
     dcterms:type "DATE" .
 
+<https://example.org/andric-letters/entity/date_25_juna_1927> a schema:Date ;
+    rdfs:label "25 juna 1927"@sr-Latn ;
+    dcterms:type "DATE" .
+
+<https://example.org/andric-letters/entity/date_25_vi_1927> a schema:Date ;
+    rdfs:label "25. VI 1927"@sr-Latn ;
+    dcterms:type "DATE" .
+
+<https://example.org/andric-letters/entity/date_27_maja_1938> a schema:Date ;
+    rdfs:label "27 maja 1938"@sr-Latn ;
+    dcterms:type "DATE" .
+
+<https://example.org/andric-letters/entity/date_27_v_1938> a schema:Date ;
+    rdfs:label "27. V 1938"@sr-Latn ;
+    dcterms:type "DATE" .
+
 <https://example.org/andric-letters/entity/date_28_xi_1925> a schema:Date ;
     rdfs:label "28. XI 1925"@sr-Latn ;
     dcterms:type "DATE" .
@@ -1847,6 +2263,12 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:source <http://www.wikidata.org/entity/Q40> ;
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q40> .
+
+<https://example.org/andric-letters/entity/loc_bec> a schema:Place ;
+    rdfs:label "Beč"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q131612> ;
+    dcterms:type "LOC" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q131612> .
 
 <https://example.org/andric-letters/entity/loc_carigrad> a schema:Place ;
     rdfs:label "Carigrad"@sr-Latn ;
@@ -1934,6 +2356,14 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q37489663> .
 
+<https://example.org/andric-letters/entity/misc_antologija_ljubavne_lirike> a schema:Thing ;
+    rdfs:label "Antologija ljubavne lirike"@sr-Latn ;
+    dcterms:type "MISC" .
+
+<https://example.org/andric-letters/entity/misc_antologija_najnovije_lirike> a schema:Thing ;
+    rdfs:label "Antologija najnovije lirike"@sr-Latn ;
+    dcterms:type "MISC" .
+
 <https://example.org/andric-letters/entity/misc_pripovetke> a schema:Thing ;
     rdfs:label "Pripovetke"@sr-Latn ;
     dcterms:type "MISC" .
@@ -1950,11 +2380,21 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:type "ORG" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q162633> .
 
+<https://example.org/andric-letters/entity/org_consulat_general_scs> a schema:Organization ;
+    rdfs:label "Consulat General SCS"@sr-Latn ;
+    dcterms:type "ORG" .
+
 <https://example.org/andric-letters/entity/org_hrvatska_revija> a schema:Organization ;
     rdfs:label "Hrvatska revija"@sr-Latn ;
     dcterms:source <http://www.wikidata.org/entity/Q5923993> ;
     dcterms:type "ORG" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q5923993> .
+
+<https://example.org/andric-letters/entity/org_ministarstvo_inostranih_poslova> a schema:Organization ;
+    rdfs:label "Ministarstvo inostranih poslova"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q675983> ;
+    dcterms:type "ORG" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q675983> .
 
 <https://example.org/andric-letters/entity/org_srpska_knjizevna_zadruga> a schema:Organization ;
     rdfs:label "Srpska književna zadruga"@sr-Latn ;
@@ -1967,6 +2407,18 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:source <http://www.wikidata.org/entity/Q1201922> ;
     dcterms:type "ORG" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q1201922> .
+
+<https://example.org/andric-letters/entity/per_antun_gustav_matos> a schema:Person ;
+    rdfs:label "Antun Gustav Matoš"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q610015> ;
+    dcterms:type "PER" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q610015> .
+
+<https://example.org/andric-letters/entity/per_bozidar_kovacevic> a schema:Person ;
+    rdfs:label "Božidar Kovačević"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q12749125> ;
+    dcterms:type "PER" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q12749125> .
 
 <https://example.org/andric-letters/entity/per_bronisław_grabowski> a schema:Person ;
     rdfs:label "Bronisław Grabowski"@sr-Latn ;
@@ -2044,6 +2496,12 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q11194> .
 
+<https://example.org/andric-letters/entity/per_svetislav_cvijanovic> a schema:Person ;
+    rdfs:label "Svetislav Cvijanović"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q106417687> ;
+    dcterms:type "PER" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q106417687> .
+
 <https://example.org/andric-letters/entity/date_30_ix_1927> a schema:Date ;
     rdfs:label "30. IX 1927"@sr-Latn ;
     dcterms:type "DATE" .
@@ -2066,27 +2524,31 @@ Zagreb, Dežmanova ul. 3/1"""@sr-Latn .
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q239266> .
 
+<https://example.org/andric-letters/entity/per_vojmir_durbesic> a schema:Person ;
+    rdfs:label "Vojmir Durbešić"@sr-Latn ;
+    dcterms:type "PER" .
+
 <https://example.org/andric-letters/entity/loc_marseille> a schema:Place ;
     rdfs:label "Marseille"@sr-Latn ;
     dcterms:source <http://www.wikidata.org/entity/Q23482> ;
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q23482> .
 
-<https://example.org/andric-letters/entity/loc_zagreb> a schema:Place ;
-    rdfs:label "Zagreb"@sr-Latn ;
-    dcterms:source <http://www.wikidata.org/entity/Q1435> ;
-    dcterms:type "LOC" ;
-    skos:exactMatch <http://www.wikidata.org/entity/Q1435> .
-
-andric:andric-private-letters-1925-1941 a schema:Collection ;
-    rdfs:label "Ivo Andrić: Pisma (1912–1973) — selected letters"@sr-Latn ;
-    dcterms:source "Karaulac, Miroslav, ed. Ivo Andrić: Pisma (1912–1973), private correspondence"@sr-Latn .
-
 <https://example.org/andric-letters/entity/loc_zeneva> a schema:Place ;
     rdfs:label "Ženeva"@sr-Latn ;
     dcterms:source <http://www.wikidata.org/entity/Q23861440> ;
     dcterms:type "LOC" ;
     skos:exactMatch <http://www.wikidata.org/entity/Q23861440> .
+
+andric:andric-private-letters-1925-1941 a schema:Collection ;
+    rdfs:label "Ivo Andrić: Pisma (1912–1973) — selected letters"@sr-Latn ;
+    dcterms:source "Karaulac, Miroslav, ed. Ivo Andrić: Pisma (1912–1973), private correspondence"@sr-Latn .
+
+<https://example.org/andric-letters/entity/loc_zagreb> a schema:Place ;
+    rdfs:label "Zagreb"@sr-Latn ;
+    dcterms:source <http://www.wikidata.org/entity/Q1435> ;
+    dcterms:type "LOC" ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1435> .
 
 <https://example.org/andric-letters/entity/loc_beograd> a schema:Place ;
     rdfs:label "Beograd"@sr-Latn ;
